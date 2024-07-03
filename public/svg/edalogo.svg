@@ -1,0 +1,35 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.3 57" style="enable-background:new 0 0 52.3 57;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#mask0_1_);}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="57" width="52.3" x="-6.8" y="0.8">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g>
+  <defs>
+   <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="52.3" height="57">
+    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0">
+    </feColorMatrix>
+   </filter>
+  </defs>
+  <mask maskUnits="userSpaceOnUse" x="0" y="0" width="52.3" height="57" id="mask0_1_">
+   <path class="st0" d="M60.8,29.2c0,16.7-13.9,30.1-31.1,30.1S-1.4,45.9-1.4,29.2c0-16.7,13.9-30.1,31.1-30.1S60.8,12.6,60.8,29.2z">
+   </path>
+  </mask>
+  <g class="st1">
+   <path d="M48,43.9c-4.6,4.1-10.7,6.5-17.2,6.5c-13.8,0-24.2-10.7-24.2-22.9C6.6,16,15.7,6.6,27.1,6.6c10.7,0,18.5,8.3,18.5,17.3
+			c0,8.4-6.7,15.3-14.8,15.3c-7.5,0-12.8-5.7-12.8-11.7c0-5.4,4.2-9.7,9.1-9.7c4.4,0,7.1,3.2,7.1,6.1c0,2.5-1.8,4.1-3.5,4.1
+			c-0.6,0-0.8-0.1-1-0.3c0.5-0.7,0.8-1.6,0.7-2.5c-0.3-1.8-1.9-3-3.7-2.8c-1.5,0.2-2.5,1.3-3,2c-0.5,0.9-0.8,1.9-0.8,3
+			c0,4.3,4,7.1,7.9,7.1c5.7,0,10-5,10-10.7c0-7-6-12.7-13.6-12.7c-8.8,0-15.7,7.5-15.7,16.3c0,10,8.5,18.3,19.3,18.3
+			c12,0,21.4-10,21.4-21.9C52.1,11.1,41.3,0,27.1,0C12,0,0,12.4,0,27.5C0,43.6,13.5,57,30.7,57c8.2,0,15.8-3.1,21.6-8.2L48,43.9z
+			 M29.3,27.4C29.3,27.4,29.3,27.4,29.3,27.4L29.3,27.4z">
+   </path>
+  </g>
+ </g>
+</svg>

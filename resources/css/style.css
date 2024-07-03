@@ -1,0 +1,8 @@
+.card-2 {
+    display: grid;
+    padding-top: 4rem;
+    background: linear-gradient(rgba(50, 60, 70, 0.9), rgba(50, 60, 70, 0.9)), no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 4rem;
+}
