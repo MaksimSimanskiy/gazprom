@@ -11,6 +11,9 @@ Route::get('/main', function () {
 Route::get('/reg', function () {
     return view('reg');
 }) -> name('reg');
+Route::get('/admin', function () {
+    return view('admin');
+}) -> name('admin');
 
 Route::post('/form', [MainController::class, 'add']) ->name('form');
 
