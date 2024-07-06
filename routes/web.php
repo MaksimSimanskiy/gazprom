@@ -7,15 +7,10 @@ Route::get('/', function () {
 }) -> name('main');
 Route::get('/main', function () {
     return view('main');
-}) -> name('main');
+}) -> name('major');
 Route::get('/reg', function () {
     return view('reg');
 }) -> name('reg');
 
-Route::get('/review', [MainController::class, 'home']) -> name('/review');
-Route::get('/home', 'MainController@home');
+Route::post('/form', [MainController::class, 'add']) ->name('form');
 
-Route::post('/review/check', [MainController::class, 'review_check']);
-Route::get('/user/{id}/{name}', function ($id,$name) {
-    return view('about');
-});

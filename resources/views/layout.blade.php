@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
 
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="Kuper_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     @vite(['resources/css/app.css','resources/js/app.js'])
 
@@ -17,7 +18,7 @@
     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b md:border-gray-100 dark:border-gray-600 shadow-md border border-gray-200 rounded-lg md:rounded-none" >
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <a href="#" class="flex items-center space-x-5 rtl:space-x-reverse">
-            <img src="{{ url('svg/sb logo color 3.svg')}}" class="h-7 md:h-8"  alt="Сбермаркет">
+            <img src="{{ url('svg/sb logo color 3.svg')}}" class="h-6 md:h-8"  alt="Сбермаркет">
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <span class="object-center	">

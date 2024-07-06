@@ -10,3 +10,8 @@
       src: url(/font/CoFoSans-Medium.woff2) format('woff2');
     }
   }
+  input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
