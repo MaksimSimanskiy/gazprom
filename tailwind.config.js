@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        gazprom:'#75c232'
+        gazprom:'#75c232',
+        grad:'linear-gradient(125deg, #FF6B6B, #efb803, #75c232, #118AB2)'
       },
       spacing: {
         '128': '32rem',

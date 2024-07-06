@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title')Форма регистрации@endsection
 @section('content')
-<form method="post" name="myForm" class="flex justify-center items-center my-16" action="" id="form">
+<form method="post" name="myForm" enctype="multipart/form-data" class="flex justify-center items-center my-16 " action="" id="form">
     @csrf
     @method('POST')
     <div class="grid gap-5 m-4 mt-8 md:grid-cols-1 p-5 border border-gray-300 rounded-lg">
@@ -52,12 +52,12 @@
   </select>
 
 </div>
-  <input id="city_name" name="city_name" type="hidden">
+  <input id="city_name" name="city_name" type="hidden" enctype="multipart/form-data">
     
     <div class="hidden" id="sixteen">
-<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Загрузите фото согласия от законных представителей</label>
-<input id ="verification" name="file "class="block w-full  text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
-<p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help"><a download href="{{url('docs/ФормаСогласия.pdf')}}" class="text-orange-400 hover:underline dark:text-orange-500">Шаблон согласия</a>. После проверки вы сможете начать работать</p>
+<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Загрузите фото согласия от законных представителей <a download href="{{url('docs/ФормаСогласия.pdf')}}" class="text-orange-400 hover:underline dark:text-orange-500">Шаблон согласия</a>.</label>
+<input id ="verification" name="file "class="block w-full  text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" type="file">
+<p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">После проверки вы сможете начать работать</p>
 
 </div>
         <div class="flex items-start mb-2">
@@ -122,8 +122,9 @@
         </div>
     </div>
 </div>
+
 <script>
-        const typeInput = document.getElementById('sub');
+        const typeInput = document.getElementById('remember');
         const dobInput = document.getElementById('dateb');
         const underageDiv = document.getElementById('sixteen');
         const verificationInput = document.getElementById('verification');
@@ -148,36 +149,36 @@
     <script>
 
   
-    $("#form").submit(function(e){
-e.preventDefault();
-$("#myForm :input").prop('disabled', true);
-    
-    // Показываем анимацию загрузки
-    $("#modal2").click();
-$.ajax({
-type: 'POST',
-url: '/form',
-data: $(this).serialize(),
-dataType: 'json',
-cache: false,
-success: function(response){
-    $("#modal").click();
-    $('form[name=myForm]').trigger('reset');
-},
-error: function(data) {
-    $('#response').text = "Извините произошла какая то ошибка, повторите позже или обратитесь к менеджеру по телефону"
-    $("#modal").click();
-    $('form[name=myForm]').trigger('reset');
-    $('response').text = "Извините произошла какая то ошибка, повторите позже или обратитесь к менеджеру по телефону"
-            // Во время загрузки файла произошла ошибка
-        },
-complete: function() {
-    $("#modal3").click();
-
-    $("#myForm :input").prop('disabled', false);
- // Разблокировка полей ввода
-        }
-});
+$(document).ready(function(){
+    $('#form').submit(function(e){
+        e.preventDefault();
+        
+        var formData = new FormData(this);
+        var image = $("#verification")[0].files[0];
+        formData.append('fieldImg', image);
+        $("#modal2").click();
+        $.ajax({
+            type: 'POST',
+            url: '/form',
+            data: formData,
+            processData: false, // Не обрабатывать данные
+            contentType: false, // Не устанавливать тип контента
+            cache: false,
+            success: function(response){
+                $("#modal").click();
+                $('form[name=myForm]').trigger('reset');
+            },
+            error: function(data) {
+                $('#response').text("Извините, произошла ошибка. Повторите позже или обратитесь к менеджеру по телефону");
+                $("#modal").click();
+                $('form[name=myForm]').trigger('reset');
+            },
+            complete: function() {
+                $("#modal3").click();
+                $("#myForm :input").prop('disabled', false);
+            }
+        });
+    });
 });
 </script>
 <script>
