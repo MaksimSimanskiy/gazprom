@@ -40,7 +40,7 @@ class SberController extends Controller
 $response = Http::withHeaders([
     'Content-Type' => 'application/json',
     'Authorization'=>'Basic '.$auth 
-])->timeout(40)->post($this-> url, [
+])->timeout(40)->post($this-> url,[
     'candidates' => [
         [
             'phone' => $this->phone,
@@ -60,7 +60,6 @@ $response = Http::withHeaders([
     ]
 ],$request->all());
      $responseData = $response->json();
-     echo $auth;
      return $responseData;
     }
 
