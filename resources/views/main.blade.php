@@ -33,7 +33,7 @@
 <a href="{{ route('reg') }}" class="mx-2 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-96 md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/uni(4).png')}}" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal" >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-универсал</h5>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-универсал (Быстрая доставка)</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Доставка заказа до двери клиента на собственном авто.Закрепляется за районом. Зона доставки радиусом до 8 км. За одну поездку водитель-курьер везет один заказ.</p>
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Условия</h5>
         <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
@@ -85,7 +85,7 @@
 <a href="{{ route('reg') }}" class="mx-2 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
     <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-96 md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/auto(2).png')}}" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-курьер</h5>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-курьер (Плановая доставка)</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Закрепляется за определённым супермаркетом или рестораном. Курьеру за один рейс даётся сразу несколько адресов, по которым надо доставить товары. Радиус доставки до 15 км
 </p>
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Условия</h5>
