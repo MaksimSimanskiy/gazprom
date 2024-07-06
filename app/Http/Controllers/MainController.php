@@ -34,7 +34,7 @@ class MainController extends Controller
         //$response = $amo -> send();
         $sb = new SberController($first_name,$last_name,$phone,$dateb,$vacancy_id,$city_id,$request_id);
         $sbresp = $sb -> send();
-        return json_encode($sbresp.';'.$response);
+        return json_encode($sbresp);
        
         }
 
