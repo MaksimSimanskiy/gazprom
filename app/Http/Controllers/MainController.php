@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Validation\Rules\Exists;
 
 class MainController extends Controller
@@ -23,6 +24,9 @@ class MainController extends Controller
         $city_name = $request['city_name'];
         $request_id = $request['_token'];
         $fileName = 'более 18 лет';
+        $db = pg_connect("host=pg3.sweb.ru dbname=maksimsima user=maksimsima password=Maks1999");
+        $query = "INSERT INTO sber (first_name, last_name, phone, dateb,vacancy_id ,city_name) VALUES ('$first_name', '$last_name', '$phone', '$dateb','$vacancy_id','$city_name')";
+        $result = pg_query($db, $query);        
         if ($request->hasFile('fieldImg')) {
             $image = $request->file('fieldImg');
             $name_image = $image->getClientOriginalName();
