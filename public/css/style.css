@@ -11,15 +11,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
 .gradient {
+
+  border: 5px solid transparent; /* Параметры рамки */
+  background: 
+   linear-gradient(#fff, #fff) padding-box, /* Белый фон */
+   linear-gradient(45deg, #FF6B6B, #FFD166,  #75c232, #11b27a) border-box; /* Градиентная рамка */
+  border-radius: 20px; /* Радиус скругления */
+}
+.gradient2 {
+
+  border: 2px solid transparent; /* Параметры рамки */
+  background: 
+   linear-gradient(#fff, #fff) padding-box, /* Белый фон */
+   linear-gradient(45deg, #FF6B6B, #FFD166,  #75c232, #11b27a) border-box; /* Градиентная рамка */
+  border-radius: 20px; /* Радиус скругления */
+}
+.fon-gradient {
+
   background: linear-gradient(125deg, #FF6B6B, #efb803, #75c232, #118AB2);
   /* Замените цвета на нужные вам */
   width: 100%;
   height: 100vh; /* Высота по вашему желанию */
-}
-.border-gradient {
-
-  border: 2px solid;
-  border-image: linear-gradient(to right, #FF6B6B, #FFD166,  #75c232, #11b27a) 1;
-  border-radius: 20px;
 }
 

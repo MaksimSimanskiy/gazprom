@@ -4,9 +4,9 @@
 <form method="post" name="myForm" enctype="multipart/form-data" class="flex justify-center items-center my-16 " action="" id="form">
     @csrf
     @method('POST')
-    <div class="grid gap-5 m-4 mt-8 md:grid-cols-1 p-5 border border-gray-300 rounded-lg">
+    <div class="grid gap-5 m-4 mt-8 md:grid-cols-1 p-5  hover:shadow-gazprom hover:shadow-md rounded-lg gradient2">
     <div id="vacancy" class="inline-flex items-center justify-center w-full ">
-    <hr class="md:w-full w-full h-0.5 md:h-1 my-8 bg-gazprom border-0 dark:bg-gray-700">
+    <hr class="md:w-full w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
     <span class="absolute px-3 md:text-3xl text-xl font-bold tracking-tight text-gray-900   bg-white  dark:text-white dark:bg-gray-900">Форма регистрации
 </span>
 </div>
@@ -38,11 +38,11 @@
 </div>
     <div>
   <select id="type" name="type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
-    <option selected>Выберите тип работы</option>
-    <option value="13">Пеший курьер</option>
-    <option value="3">Водитель-курьер(Плановая доставка)</option>
-    <option value="3_1">Водитель-универсал(Быстрая доставка)</option>
-    <option value="15">Велокурьер</option>
+    <option {{ $selectedType === null ? 'selected' : '' }}>Выберите тип работы</option>
+    <option value="13" {{ $selectedType == '13' ? 'selected' : '' }}>Пеший курьер</option>
+    <option value="3" {{ $selectedType == '3' ? 'selected' : '' }}>Водитель-курьер (Плановая доставка)</option>
+    <option value="3_1" {{ $selectedType == '3_1' ? 'selected' : '' }}>Водитель-универсал (Быстрая доставка)</option>
+    <option value="15" {{ $selectedType == '15' ? 'selected' : '' }}>Велокурьер</option>
   </select>
     </div>
     <div>
@@ -182,13 +182,14 @@ $(document).ready(function(){
 });
 </script>
 <script>
+    
     document.getElementById('city').addEventListener('change', function() {
   var selectedCity = this.options[this.selectedIndex].text;
   document.getElementById('city_name').value = selectedCity;
 });
     // Функция для загрузки и обработки данных из файла city.json
     function loadCities() {
-        fetch('city.json')
+        fetch("{{ url('city.json') }}")
         .then(response => response.json())
         .then(data => {
             const cities = data.cities;

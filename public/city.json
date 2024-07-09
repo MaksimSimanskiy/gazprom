@@ -1,2051 +1,2049 @@
 {
-    "cities":
-    [ 
-   {
-   "name":"Великий Новгород",
-   "id":    1,
-   "show": true
-   },
-   {
-   "name":"Майкоп",
-   "id":2,
-   "show": true
-   },
-   {
-   "name":"Оренбург",
-   "id":3,
-   "show": true
-   },
-   {
-   "name":"Пенза",
-   "id":4,
-   "show": true
-   },
-   {
-   "name":"Пермь",
-   "id":5,
-   "show": true
-   },
-   {
-   "name":"Жуковский",
-   "id":6,
-   "show": true
-   },
-   {
-   "name":"Анадырь",
-   "id":7,
-   "show": true
-   },
-   {
-   "name":"Архангельск",
-   "id":8,
-   "show": true
-   },
-   {
-   "name":"Владивосток",
-   "id":9,
-   "show": true
-   },
-   {
-   "name":"Липецк",
-   "id":10,
-   "show": true
-   },
-   {
-   "name":"Алексин",
-   "id":11,
-   "show": true
-   },
-   {
-   "name":"Вологда",
-   "id":12,
-   "show": true
-   },
-   {
-   "name":"Казань",
-   "id":13,
-   "show": true
-   },
-   {
-   "name":"Калуга",
-   "id":14,
-   "show": true
-   },
-   {
-   "name":"Тамбов",
-   "id":15,
-   "show": true
-   },
-   {
-   "name":"Тверь",
-   "id":16,
-   "show": true
-   },
-   {
-   "name":"Красногорск",
-   "id":17,
-   "show": true
-   },
-   {
-   "name":"НижнийНовгород",
-   "id":18,
-   "show": true
-   },
-   {
-   "name":"НижнийТагил",
-   "id":19,
-   "show": true
-   },
-   {
-   "name":"Петрозаводск",
-   "id":20,
-   "show": true
-   },
-   {
-   "name":"Железногорск",
-   "id":21,
-   "show": true
-   },
-   {
-   "name":"Калининград",
-   "id":22,
-   "show": true
-   },
-   {
-   "name":"Киров",
-   "id":23,
-   "show": true
-   },
-   {
-   "name":"Сыктывкар",
-   "id":24,
-   "show": true
-   },
-   {
-   "name":"Звенигород",
-   "id":25,
-   "show": true
-   },
-   {
-   "name":"Балашиха",
-   "id":26,
-   "show": true
-   },
-   {
-   "name":"Долгопрудный",
-   "id":27,
-   "show": true
-   },
-   {
-   "name":"Лыткарино",
-   "id":28,
-   "show": true
-   },
-   {
-   "name":"Владимир",
-   "id":29,
-   "show": true
-   },
-   {
-   "name":"Махачкала",
-   "id":30,
-   "show": true
-   },
-   {
-   "name":"Мурманск",
-   "id":31,
-   "show": true
-   },
-   {
-   "name":"Подольск",
-   "id":32,
-   "show": true
-   },
-   {
-   "name":"Владикавказ",
-   "id":33,
-   "show": true
-   },
-   {
-   "name":"Кострома",
-   "id":34,
-   "show": true
-   },
-   {
-   "name":"Пятигорск",
-   "id":35,
-   "show": true
-   },
-   {
-   "name":"Балахна",
-   "id":36,
-   "show": true
-   },
-   {
-   "name":"Горно-Алтайск",
-   "id":37,
-   "show": true
-   },
-   {
-   "name":"Орск",
-   "id":38,
-   "show": true
-   },
-   {
-   "name":"Нальчик",
-   "id":39,
-   "show": true
-   },
-   {
-   "name":"Рязань",
-   "id":40,
-   "show": true
-   },
-   {
-   "name":"Черкесск",
-   "id":41,
-   "show": true
-   },
-   {
-   "name":"Нарьян-Мар",
-   "id":42,
-   "show": true
-   },
-   {
-   "name":"Новосибирск",
-   "id":43,
-   "show": true
-   },
-   {
-   "name":"Бугульма",
-   "id":44,
-   "show": true
-   },
-   {
-   "name":"Реутов",
-   "id":45,
-   "show": true
-   },
-   {
-   "name":"Иркутск",
-   "id":46,
-   "show": true
-   },
-   {
-   "name":"Кемерово",
-   "id":47,
-   "show": true
-   },
-   {
-   "name":"Кызыл",
-   "id":48,
-   "show": true
-   },
-   {
-   "name":"Юрга",
-   "id":49,
-   "show": true
-   },
-   {
-   "name":"Солнечногорск",
-   "id":50,
-   "show": true
-   },
-   {
-   "name":"Барнаул",
-   "id":51,
-   "show": true
-   },
-   {
-   "name":"НабережныеЧелны",
-   "id":52,
-   "show": true
-   },
-   {
-   "name":"Тольятти",
-   "id":53,
-   "show": true
-   },
-   {
-   "name":"Уссурийск",
-   "id":54,
-   "show": true
-   },
-   {
-   "name":"Уфа",
-   "id":55,
-   "show": true
-   },
-   {
-   "name":"Чита",
-   "id":56,
-   "show": true
-   },
-   {
-   "name":"Магадан",
-   "id":57,
-   "show": true
-   },
-   {
-   "name":"Хабаровск",
-   "id":58,
-   "show": true
-   },
-   {
-   "name":"Элиста",
-   "id":59,
-   "show": true
-   },
-   {
-   "name":"Йошкар-Ола",
-   "id":60,
-   "show": true
-   },
-   {
-   "name":"Ноябрьск",
-   "id":61,
-   "show": true
-   },
-   {
-   "name":"Санкт-Петербург",
-   "id":62,
-   "show": true
-   },
-   {
-   "name":"Чистополь",
-   "id":63,
-   "show": true
-   },
-   {
-   "name":"Псков",
-   "id":64,
-   "show": true
-   },
-   {
-   "name":"Ростов-на-Дону",
-   "id":65,
-   "show": true
-   },
-   {
-   "name":"Саратов",
-   "id":66,
-   "show": true
-   },
-   {
-   "name":"Стерлитамак",
-   "id":67,
-   "show": true
-   },
-   {
-   "name":"Магнитогорск",
-   "id":68,
-   "show": true
-   },
-   {
-   "name":"Саранск",
-   "id":69,
-   "show": true
-   },
-   {
-   "name":"Сочи",
-   "id":70,
-   "show": true
-   },
-   {
-   "name":"Ханты-Мансийск",
-   "id":71,
-   "show": true
-   },
-   {
-   "name":"Челябинск",
-   "id":72,
-   "show": true
-   },
-   {
-   "name":"Миасс",
-   "id":73,
-   "show": true
-   },
-   {
-   "name":"Комсомольск-на-Амуре",
-   "id":74,
-   "show": true
-   },
-   {
-   "name":"Краснодар",
-   "id":75,
-   "show": true
-   },
-   {
-   "name":"Омск",
-   "id":76,
-   "show": true
-   },
-   {
-   "name":"Астрахань",
-   "id":77,
-   "show": true
-   },
-   {
-   "name":"Братск",
-   "id":78,
-   "show": true
-   },
-   {
-   "name":"Курган",
-   "id":79,
-   "show": true
-   },
-   {
-   "name":"Домодедово",
-   "id":80,
-   "show": true
-   },
-   {
-   "name":"Пушкино",
-   "id":81,
-   "show": true
-   },
-   {
-   "name":"Ставрополь",
-   "id":82,
-   "show": true
-   },
-   {
-   "name":"Сургут",
-   "id":83,
-   "show": true
-   },
-   {
-   "name":"Выкса",
-   "id":84,
-   "show": true
-   },
-   {
-   "name":"Видное",
-   "id":85,
-   "show": true
-   },
-   {
-   "name":"Котельники",
-   "id":86,
-   "show": true
-   },
-   {
-   "name":"Таганрог",
-   "id":87,
-   "show": true
-   },
-   {
-   "name":"Абакан",
-   "id":88,
-   "show": true
-   },
-   {
-   "name":"Екатеринбург",
-   "id":89,
-   "show": true
-   },
-   {
-   "name":"Красноярск",
-   "id":90,
-   "show": true
-   },
-   {
-   "name":"Мытищи",
-   "id":91,
-   "show": true
-   },
-   {
-   "name":"Александров",
-   "id":92,
-   "show": true
-   },
-   {
-   "name":"Каменск-Уральский",
-   "id":93,
-   "show": true
-   },
-   {
-   "name":"Новороссийск",
-   "id":94,
-   "show": true
-   },
-   {
-   "name":"Петропавловск-Камчатский",
-   "id":95,
-   "show": true
-   },
-   {
-   "name":"Тобольск",
-   "id":96,
-   "show": true
-   },
-   {
-   "name":"Лобня",
-   "id":97,
-   "show": true
-   },
-   {
-   "name":"Альметьевск",
-   "id":98,
-   "show": true
-   },
-   {
-   "name":"Белгород",
-   "id":99,
-   "show": true
-   },
-   {
-   "name":"Химки",
-   "id":100,
-   "show": true
-   },
-   {
-   "name":"Волгоград",
-   "id":101,
-   "show": true
-   },
-   {
-   "name":"Самара",
-   "id":102,
-   "show": true
-   },
-   {
-   "name":"Томск",
-   "id":103,
-   "show": true
-   },
-   {
-   "name":"Тюмень",
-   "id":104,
-   "show": true
-   },
-   {
-   "name":"Ульяновск",
-   "id":105,
-   "show": true
-   },
-   {
-   "name":"Дзержинский",
-   "id":106,
-   "show": true
-   },
-   {
-   "name":"Курск",
-   "id":107,
-   "show": true
-   },
-   {
-   "name":"Находка",
-   "id":108,
-   "show": true
-   },
-   {
-   "name":"Раменское",
-   "id":109,
-   "show": true
-   },
-   {
-   "name":"Ачинск",
-   "id":110,
-   "show": true
-   },
-   {
-   "name":"Биробиджан",
-   "id":111,
-   "show": true
-   },
-   {
-   "name":"Москва",
-   "id":112,
-   "show": true
-   },
-   {
-   "name":"Ярославль",
-   "id":113,
-   "show": true
-   },
-   {
-   "name":"Воронеж",
-   "id":114,
-   "show": true
-   },
-   {
-   "name":"Грозный",
-   "id":115,
-   "show": true
-   },
-   {
-   "name":"Орел",
-   "id":116,
-   "show": true
-   },
-   {
-   "name":"Прокопьевск",
-   "id":117,
-   "show": true
-   },
-   {
-   "name":"Улан-Удэ",
-   "id":118,
-   "show": true
-   },
-   {
-   "name":"Иваново",
-   "id":119,
-   "show": true
-   },
-   {
-   "name":"Нижневартовск",
-   "id":120,
-   "show": true
-   },
-   {
-   "name":"Новокузнецк",
-   "id":121,
-   "show": true
-   },
-   {
-   "name":"Чебоксары",
-   "id":122,
-   "show": true
-   },
-   {
-   "name":"Люберцы",
-   "id":123,
-   "show": true
-   },
-   {
-   "name":"Бийск",
-   "id":124,
-   "show": true
-   },
-   {
-   "name":"Ижевск",
-   "id":125,
-   "show": true
-   },
-   {
-   "name":"Тула",
-   "id":126,
-   "show": true
-   },
-   {
-   "name":"Южно-Сахалинск",
-   "id":127,
-   "show": true
-   },
-   {
-   "name":"Якутск",
-   "id":128,
-   "show": true
-   },
-   {
-   "name":"Смоленск",
-   "id":129,
-   "show": true
-   },
-   {
-   "name":"Благовещенск",
-   "id":130,
-   "show": true
-   },
-   {
-   "name":"Брянск",
-   "id":131,
-   "show": true
-   },
-   {
-   "name":"Рыбинск",
-   "id":132,
-   "show": true
-   },
-   {
-   "name":"Бердск",
-   "id":219,
-   "show": true
-   },
-   {
-   "name":"Саров",
-   "id":220,
-   "show": true
-   },
-   {
-   "name":"Артем",
-   "id":221,
-   "show": true
-   },
-   {
-   "name":"Московский",
-   "id":222,
-   "show": true
-   },
-   {
-   "name":"Зеленоградск",
-   "id":223,
-   "show": true
-   },
-   {
-   "name":"Томилино",
-   "id":224,
-   "show": true
-   },
-   {
-   "name":"Троицк",
-   "id":225,
-   "show": true
-   },
-   {
-   "name":"Дубна",
-   "id":226,
-   "show": true
-   },
-   {
-   "name":"Ивантеевка",
-   "id":227,
-   "show": true
-   },
-   {
-   "name":"Тихвин",
-   "id":228,
-   "show": true
-   },
-   {
-   "name":"Березники",
-   "id":229,
-   "show": true
-   },
-   {
-   "name":"Дивногорск",
-   "id":230,
-   "show": true
-   },
-   {
-   "name":"Саяногорск",
-   "id":231,
-   "show": true
-   },
-   {
-   "name":"Волхов",
-   "id":232,
-   "show": true
-   },
-   {
-   "name":"Кириши",
-   "id":233,
-   "show": true
-   },
-   {
-   "name":"Лесосибирск",
-   "id":234,
-   "show": true
-   },
-   {
-   "name":"Сестрорецк",
-   "id":235,
-   "show": true
-   },
-   {
-   "name":"д.Ликино",
-   "id":236,
-   "show": true
-   },
-   {
-   "name":"РостовВеликий",
-   "id":237,
-   "show": true
-   },
-   {
-   "name":"Бор",
-   "id":238,
-   "show": true
-   },
-   {
-   "name":"Ишим",
-   "id":239,
-   "show": true
-   },
-   {
-   "name":"Северск",
-   "id":240,
-   "show": true
-   },
-   {
-   "name":"Канск",
-   "id":241,
-   "show": true
-   },
-   {
-   "name":"Чапаевск",
-   "id":242,
-   "show": true
-   },
-   {
-   "name":"Сызрань",
-   "id":243,
-   "show": true
-   },
-   {
-   "name":"Павлово",
-   "id":244,
-   "show": true
-   },
-   {
-   "name":"Черногорск",
-   "id":245,
-   "show": true
-   },
-   {
-   "name":"Серов",
-   "id":246,
-   "show": true
-   },
-   {
-   "name":"КрасноеСело",
-   "id":247,
-   "show": true
-   },
-   {
-   "name":"Кронштадт",
-   "id":248,
-   "show": true
-   },
-   {
-   "name":"Павловск",
-   "id":249,
-   "show": true
-   },
-   {
-   "name":"Шлиссельбург",
-   "id":250,
-   "show": true
-   },
-   {
-   "name":"д.Картмазово",
-   "id":251,
-   "show": true
-   },
-   {
-   "name":"Егорьевск",
-   "id":252,
-   "show": true
-   },
-   {
-   "name":"Железнодорожный",
-   "id":253,
-   "show": true
-   },
-   {
-   "name":"Клин",
-   "id":254,
-   "show": true
-   },
-   {
-   "name":"Можайск",
-   "id":255,
-   "show": true
-   },
-   {
-   "name":"Озеры",
-   "id":256,
-   "show": true
-   },
-   {
-   "name":"Павловскийпосад",
-   "id":257,
-   "show": true
-   },
-   {
-   "name":"Пущино",
-   "id":258,
-   "show": true
-   },
-   {
-   "name":"СергиевПосад",
-   "id":259,
-   "show": true
-   },
-   {
-   "name":"Шатура",
-   "id":260,
-   "show": true
-   },
-   {
-   "name":"Коммунарка",
-   "id":261,
-   "show": true
-   },
-   {
-   "name":"Апрелевка",
-   "id":262,
-   "show": true
-   },
-   {
-   "name":"Фрязино",
-   "id":263,
-   "show": true
-   },
-   {
-   "name":"Бронницы",
-   "id":264,
-   "show": true
-   },
-   {
-   "name":"Соликамск",
-   "id":265,
-   "show": true
-   },
-   {
-   "name":"Кимры",
-   "id":266,
-   "show": true
-   },
-   {
-   "name":"Лысьва",
-   "id":267,
-   "show": true
-   },
-   {
-   "name":"Марфино",
-   "id":268,
-   "show": true
-   },
-   {
-   "name":"Кунгур",
-   "id":269,
-   "show": true
-   },
-   {
-   "name":"Воскресенск",
-   "id":270,
-   "show": true
-   },
-   {
-   "name":"Кашира",
-   "id":271,
-   "show": true
-   },
-   {
-   "name":"Волоколамск",
-   "id":272,
-   "show": true
-   },
-   {
-   "name":"Новоалтайск",
-   "id":273,
-   "show": true
-   },
-   {
-   "name":"Зеленодольск",
-   "id":274,
-   "show": true
-   },
-   {
-   "name":"Елабуга",
-   "id":275,
-   "show": true
-   },
-   {
-   "name":"Рубцовск",
-   "id":276,
-   "show": true
-   },
-   {
-   "name":"Волжск",
-   "id":277,
-   "show": true
-   },
-   {
-   "name":"Медногорск",
-   "id":278,
-   "show": true
-   },
-   {
-   "name":"Обь",
-   "id":279,
-   "show": true
-   },
-   {
-   "name":"Гай",
-   "id":280,
-   "show": true
-   },
-   {
-   "name":"Новотроицк",
-   "id":281,
-   "show": true
-   },
-   {
-   "name":"Соль-Илецк",
-   "id":282,
-   "show": true
-   },
-   {
-   "name":"Анапа",
-   "id":283,
-   "show": true
-   },
-   {
-   "name":"Апатиты",
-   "id":284,
-   "show": true
-   },
-   {
-   "name":"Березовский",
-   "id":285,
-   "show": true
-   },
-   {
-   "name":"Бирск",
-   "id":286,
-   "show": true
-   },
-   {
-   "name":"Благодарный",
-   "id":287,
-   "show": true
-   },
-   {
-   "name":"Бузулук",
-   "id":288,
-   "show": true
-   },
-   {
-   "name":"ВерхняяПышма",
-   "id":289,
-   "show": true
-   },
-   {
-   "name":"Воткинск",
-   "id":290,
-   "show": true
-   },
-   {
-   "name":"ВятскиеПоляны",
-   "id":291,
-   "show": true
-   },
-   {
-   "name":"Геленджик",
-   "id":292,
-   "show": true
-   },
-   {
-   "name":"Георгиевск",
-   "id":293,
-   "show": true
-   },
-   {
-   "name":"Глазов",
-   "id":294,
-   "show": true
-   },
-   {
-   "name":"Ессентуки",
-   "id":295,
-   "show": true
-   },
-   {
-   "name":"Заводоуковск",
-   "id":296,
-   "show": true
-   },
-   {
-   "name":"Заволжье",
-   "id":297,
-   "show": true
-   },
-   {
-   "name":"Ишимбай",
-   "id":298,
-   "show": true
-   },
-   {
-   "name":"Канаш",
-   "id":299,
-   "show": true
-   },
-   {
-   "name":"Кирово-Чепецк",
-   "id":300,
-   "show": true
-   },
-   {
-   "name":"Кисловодск",
-   "id":301,
-   "show": true
-   },
-   {
-   "name":"Кондопога",
-   "id":302,
-   "show": true
-   },
-   {
-   "name":"Копейск",
-   "id":303,
-   "show": true
-   },
-   {
-   "name":"Котельнич",
-   "id":304,
-   "show": true
-   },
-   {
-   "name":"Лениногорск",
-   "id":305,
-   "show": true
-   },
-   {
-   "name":"Ломоносов",
-   "id":306,
-   "show": true
-   },
-   {
-   "name":"Мелеуз",
-   "id":307,
-   "show": true
-   },
-   {
-   "name":"МинеральныеВоды",
-   "id":308,
-   "show": true
-   },
-   {
-   "name":"Михайловск",
-   "id":309,
-   "show": true
-   },
-   {
-   "name":"Можга",
-   "id":310,
-   "show": true
-   },
-   {
-   "name":"Невинномысск",
-   "id":311,
-   "show": true
-   },
-   {
-   "name":"Нефтекамск",
-   "id":312,
-   "show": true
-   },
-   {
-   "name":"Нефтеюганск",
-   "id":313,
-   "show": true
-   },
-   {
-   "name":"Новодвинск",
-   "id":314,
-   "show": true
-   },
-   {
-   "name":"Новокуйбышевск",
-   "id":315,
-   "show": true
-   },
-   {
-   "name":"НовыйУренгой",
-   "id":316,
-   "show": true
-   },
-   {
-   "name":"Первоуральск",
-   "id":317,
-   "show": true
-   },
-   {
-   "name":"Переславль-Залесский",
-   "id":318,
-   "show": true
-   },
-   {
-   "name":"Ревда",
-   "id":319,
-   "show": true
-   },
-   {
-   "name":"Рузаевка",
-   "id":320,
-   "show": true
-   },
-   {
-   "name":"Салават",
-   "id":321,
-   "show": true
-   },
-   {
-   "name":"Сарапул",
-   "id":322,
-   "show": true
-   },
-   {
-   "name":"Северодвинск",
-   "id":323,
-   "show": true
-   },
-   {
-   "name":"Семёнов",
-   "id":324,
-   "show": true
-   },
-   {
-   "name":"Сибай",
-   "id":325,
-   "show": true
-   },
-   {
-   "name":"Среднеуральск",
-   "id":326,
-   "show": true
-   },
-   {
-   "name":"СтарыйОскол",
-   "id":327,
-   "show": true
-   },
-   {
-   "name":"Туймазы",
-   "id":328,
-   "show": true
-   },
-   {
-   "name":"Тутаев",
-   "id":329,
-   "show": true
-   },
-   {
-   "name":"Углич",
-   "id":330,
-   "show": true
-   },
-   {
-   "name":"Чайковский",
-   "id":331,
-   "show": true
-   },
-   {
-   "name":"Ялуторовск",
-   "id":332,
-   "show": true
-   },
-   {
-   "name":"Сходня",
-   "id":333,
-   "show": true
-   },
-   {
-   "name":"Троицк",
-   "id":334,
-   "show": true
-   },
-   {
-   "name":"Минусинск",
-   "id":336,
-   "show": true
-   },
-   {
-   "name":"Мончегорск",
-   "id":337,
-   "show": true
-   },
-   {
-   "name":"Сухойлог",
-   "id":338,
-   "show": true
-   },
-   {
-   "name":"Сысерть",
-   "id":339,
-   "show": true
-   },
-   {
-   "name":"Щербинка",
-   "id":340,
-   "show": true
-   },
-   {
-   "name":"Губкин",
-   "id":341,
-   "show": true
-   },
-   {
-   "name":"Карачев",
-   "id":342,
-   "show": true
-   },
-   {
-   "name":"Клинцы",
-   "id":343,
-   "show": true
-   },
-   {
-   "name":"Гусь-Хрустальный",
-   "id":344,
-   "show": true
-   },
-   {
-   "name":"Камышин",
-   "id":345,
-   "show": true
-   },
-   {
-   "name":"Михайловка",
-   "id":346,
-   "show": true
-   },
-   {
-   "name":"Урюпинск",
-   "id":347,
-   "show": true
-   },
-   {
-   "name":"ВеликийУстюг",
-   "id":348,
-   "show": true
-   },
-   {
-   "name":"Сокол",
-   "id":349,
-   "show": true
-   },
-   {
-   "name":"Лиски",
-   "id":350,
-   "show": true
-   },
-   {
-   "name":"Нововоронеж",
-   "id":351,
-   "show": true
-   },
-   {
-   "name":"Россошь",
-   "id":352,
-   "show": true
-   },
-   {
-   "name":"Семилуки",
-   "id":353,
-   "show": true
-   },
-   {
-   "name":"Вичуга",
-   "id":354,
-   "show": true
-   },
-   {
-   "name":"Кинешма",
-   "id":355,
-   "show": true
-   },
-   {
-   "name":"Родники",
-   "id":356,
-   "show": true
-   },
-   {
-   "name":"Шуя",
-   "id":357,
-   "show": true
-   },
-   {
-   "name":"Кондрово",
-   "id":358,
-   "show": true
-   },
-   {
-   "name":"Малоярославец",
-   "id":359,
-   "show": true
-   },
-   {
-   "name":"Волгореченск",
-   "id":360,
-   "show": true
-   },
-   {
-   "name":"Белореченск",
-   "id":361,
-   "show": true
-   },
-   {
-   "name":"Кореновск",
-   "id":362,
-   "show": true
-   },
-   {
-   "name":"КраснаяПоляна",
-   "id":363,
-   "show": true
-   },
-   {
-   "name":"НоваяАдыгея",
-   "id":364,
-   "show": true
-   },
-   {
-   "name":"Павловская",
-   "id":365,
-   "show": true
-   },
-   {
-   "name":"Темрюк",
-   "id":366,
-   "show": true
-   },
-   {
-   "name":"Тимашевск",
-   "id":367,
-   "show": true
-   },
-   {
-   "name":"Туапсе",
-   "id":368,
-   "show": true
-   },
-   {
-   "name":"Грязи",
-   "id":369,
-   "show": true
-   },
-   {
-   "name":"Елец",
-   "id":370,
-   "show": true
-   },
-   {
-   "name":"Лебедянь",
-   "id":371,
-   "show": true
-   },
-   {
-   "name":"Оленегорск",
-   "id":372,
-   "show": true
-   },
-   {
-   "name":"Семенов",
-   "id":373,
-   "show": true
-   },
-   {
-   "name":"Боровичи",
-   "id":374,
-   "show": true
-   },
-   {
-   "name":"СтараяРусса",
-   "id":375,
-   "show": true
-   },
-   {
-   "name":"Кузнецк",
-   "id":376,
-   "show": true
-   },
-   {
-   "name":"ВеликиеЛуки",
-   "id":377,
-   "show": true
-   },
-   {
-   "name":"Назрань",
-   "id":378,
-   "show": true
-   },
-   {
-   "name":"Дербент",
-   "id":379,
-   "show": true
-   },
-   {
-   "name":"Каспийск",
-   "id":380,
-   "show": true
-   },
-   {
-   "name":"Азов",
-   "id":381,
-   "show": true
-   },
-   {
-   "name":"Волгодонск",
-   "id":382,
-   "show": true
-   },
-   {
-   "name":"Гуково",
-   "id":383,
-   "show": true
-   },
-   {
-   "name":"Каменск-Шахтинский",
-   "id":384,
-   "show": true
-   },
-   {
-   "name":"Миллерово",
-   "id":385,
-   "show": true
-   },
-   {
-   "name":"Сальск",
-   "id":386,
-   "show": true
-   },
-   {
-   "name":"Мичуринск",
-   "id":387,
-   "show": true
-   },
-   {
-   "name":"ВышнийВолочек",
-   "id":388,
-   "show": true
-   },
-   {
-   "name":"Конаково",
-   "id":389,
-   "show": true
-   },
-   {
-   "name":"Ржев",
-   "id":390,
-   "show": true
-   },
-   {
-   "name":"Торжок",
-   "id":391,
-   "show": true
-   },
-   {
-   "name":"Донской",
-   "id":392,
-   "show": true
-   },
-   {
-   "name":"Ефремов",
-   "id":393,
-   "show": true
-   },
-   {
-   "name":"Новомосковск",
-   "id":394,
-   "show": true
-   },
-   {
-   "name":"Узловая",
-   "id":395,
-   "show": true
-   },
-   {
-   "name":"Щекино",
-   "id":396,
-   "show": true
-   },
-   {
-   "name":"Луга",
-   "id":397,
-   "show": true
-   },
-   {
-   "name":"Никольское",
-   "id":398,
-   "show": true
-   },
-   {
-   "name":"Парголово",
-   "id":399,
-   "show": true
-   },
-   {
-   "name":"Петергоф",
-   "id":400,
-   "show": true
-   },
-   {
-   "name":"Тосно",
-   "id":401,
-   "show": true
-   },
-   {
-   "name":"Высоковск",
-   "id":402,
-   "show": true
-   },
-   {
-   "name":"Голицыно",
-   "id":403,
-   "show": true
-   },
-   {
-   "name":"Зарайск",
-   "id":404,
-   "show": true
-   },
-   {
-   "name":"Красково",
-   "id":405,
-   "show": true
-   },
-   {
-   "name":"Краснозаводск",
-   "id":406,
-   "show": true
-   },
-   {
-   "name":"Лосино-Петровский",
-   "id":407,
-   "show": true
-   },
-   {
-   "name":"Луховицы",
-   "id":408,
-   "show": true
-   },
-   {
-   "name":"Монино",
-   "id":409,
-   "show": true
-   },
-   {
-   "name":"Нахабино",
-   "id":410,
-   "show": true
-   },
-   {
-   "name":"Протвино",
-   "id":411,
-   "show": true
-   },
-   {
-   "name":"Рошаль",
-   "id":412,
-   "show": true
-   },
-   {
-   "name":"Руза",
-   "id":413,
-   "show": true
-   },
-   {
-   "name":"Хотьково",
-   "id":414,
-   "show": true
-   },
-   {
-   "name":"Электрогорск",
-   "id":415,
-   "show": true
-   },
-   {
-   "name":"Электроугли",
-   "id":416,
-   "show": true
-   },
-   {
-   "name":"Яхрома",
-   "id":417,
-   "show": true
-   },
-   {
-   "name":"Красноармейск",
-   "id":418,
-   "show": true
-   },
-   {
-   "name":"Коркино",
-   "id":419,
-   "show": true
-   },
-   {
-   "name":"Внуковское",
-   "id":420,
-   "show": true
-   },
-   {
-   "name":"Ангарск",
-   "id":453,
-   "show": true
-   },
-   {
-   "name":"Арзамас",
-   "id":454,
-   "show": true
-   },
-   {
-   "name":"Армавир",
-   "id":455,
-   "show": true
-   },
-   {
-   "name":"Балаково",
-   "id":456,
-   "show": true
-   },
-   {
-   "name":"Балтийск",
-   "id":457,
-   "show": true
-   },
-   {
-   "name":"Батайск",
-   "id":458,
-   "show": true
-   },
-   {
-   "name":"Белорецк",
-   "id":459,
-   "show": true
-   },
-   {
-   "name":"Всеволожск",
-   "id":460,
-   "show": true
-   },
-   {
-   "name":"Волжский",
-   "id":461,
-   "show": true
-   },
-   {
-   "name":"Гатчина",
-   "id":462,
-   "show": true
-   },
-   {
-   "name":"Выборг",
-   "id":463,
-   "show": true
-   },
-   {
-   "name":"Дзержинск",
-   "id":464,
-   "show": true
-   },
-   {
-   "name":"Димитровград",
-   "id":465,
-   "show": true
-   },
-   {
-   "name":"Зеленоград",
-   "id":466,
-   "show": true
-   },
-   {
-   "name":"Ковров",
-   "id":467,
-   "show": true
-   },
-   {
-   "name":"Коломна",
-   "id":468,
-   "show": true
-   },
-   {
-   "name":"Колпино",
-   "id":469,
-   "show": true
-   },
-   {
-   "name":"Королев",
-   "id":470,
-   "show": true
-   },
-   {
-   "name":"Краснокамск",
-   "id":471,
-   "show": true
-   },
-   {
-   "name":"Ленинск-Кузнецкий",
-   "id":472,
-   "show": true
-   },
-   {
-   "name":"Магас",
-   "id":473,
-   "show": true
-   },
-   {
-   "name":"Муром",
-   "id":474,
-   "show": true
-   },
-   {
-   "name":"Нижнекамск",
-   "id":475,
-   "show": true
-   },
-   {
-   "name":"Новочебоксарск",
-   "id":476,
-   "show": true
-   },
-   {
-   "name":"Новочеркасск",
-   "id":477,
-   "show": true
-   },
-   {
-   "name":"Новошахтинск",
-   "id":478,
-   "show": true
-   },
-   {
-   "name":"Ногинск",
-   "id":479,
-   "show": true
-   },
-   {
-   "name":"Обнинск",
-   "id":480,
-   "show": true
-   },
-   {
-   "name":"Одинцово",
-   "id":481,
-   "show": true
-   },
-   {
-   "name":"Орехово-Зуево",
-   "id":482,
-   "show": true
-   },
-   {
-   "name":"Пермскийгородскойокруг",
-   "id":483,
-   "show": true
-   },
-   {
-   "name":"Пушкин",
-   "id":484,
-   "show": true
-   },
-   {
-   "name":"Светлогорск",
-   "id":485,
-   "show": true
-   },
-   {
-   "name":"Сосновоборск",
-   "id":486,
-   "show": true
-   },
-   {
-   "name":"Серпухов",
-   "id":487,
-   "show": true
-   },
-   {
-   "name":"Череповец",
-   "id":488,
-   "show": true
-   },
-   {
-   "name":"Шахты",
-   "id":489,
-   "show": true
-   },
-   {
-   "name":"Щелково",
-   "id":490,
-   "show": true
-   },
-   {
-   "name":"Электросталь",
-   "id":491,
-   "show": true
-   },
-   {
-   "name":"Энгельс",
-   "id":492,
-   "show": true
-   },
-   {
-   "name":"Кингисепп",
-   "id":493,
-   "show": true
-   },
-   {
-   "name":"Кировск",
-   "id":494,
-   "show": true
-   },
-   {
-   "name":"Кудрово",
-   "id":495,
-   "show": true
-   },
-   {
-   "name":"Мурино",
-   "id":496,
-   "show": true
-   },
-   {
-   "name":"Сертолово",
-   "id":497,
-   "show": true
-   },
-   {
-   "name":"СосновыйБор",
-   "id":498,
-   "show": true
-   },
-   {
-   "name":"Боброво",
-   "id":499,
-   "show": true
-   },
-   {
-   "name":"Вёшки",
-   "id":500,
-   "show": true
-   },
-   {
-   "name":"Дмитровское",
-   "id":501,
-   "show": true
-   },
-   {
-   "name":"Лопатино",
-   "id":502,
-   "show": true
-   },
-   {
-   "name":"Немчиновка",
-   "id":503,
-   "show": true
-   },
-   {
-   "name":"Новодрожжино",
-   "id":504,
-   "show": true
-   },
-   {
-   "name":"Отрадное",
-   "id":505,
-   "show": true
-   },
-   {
-   "name":"Павлино",
-   "id":506,
-   "show": true
-   },
-   {
-   "name":"Подъячево",
-   "id":507,
-   "show": true
-   },
-   {
-   "name":"Путилково",
-   "id":508,
-   "show": true
-   },
-   {
-   "name":"Сосны",
-   "id":509,
-   "show": true
-   },
-   {
-   "name":"Чёрное",
-   "id":510,
-   "show": true
-   },
-   {
-   "name":"Шолохово",
-   "id":511,
-   "show": true
-   },
-   {
-   "name":"Андреевка",
-   "id":512,
-   "show": true
-   },
-   {
-   "name":"Дедовск",
-   "id":513,
-   "show": true
-   },
-   {
-   "name":"Дмитров",
-   "id":514,
-   "show": true
-   },
-   {
-   "name":"Истра",
-   "id":515,
-   "show": true
-   },
-   {
-   "name":"Наро-Фоминск",
-   "id":516,
-   "show": true
-   },
-   {
-   "name":"Октябрьский",
-   "id":517,
-   "show": true
-   },
-   {
-   "name":"Ступино",
-   "id":518,
-   "show": true
-   },
-   {
-   "name":"Чехов",
-   "id":519,
-   "show": true
-   },
-   {
-   "name":"Луховка",
-   "id":520,
-   "show": true
-   },
-   {
-   "name":"Кстово",
-   "id":521,
-   "show": true
-   },
-   {
-   "name":"Аксай",
-   "id":522,
-   "show": true
-   },
-   {
-   "name":"КрасныйБор",
-   "id":523,
-   "show": true
-   },
-   {
-   "name":"Верхнерусское",
-   "id":524,
-   "show": true
-   },
-   {
-   "name":"Ногинскийрайон",
-   "id":526,
-   "show": true
-   },
-   {
-   "name":"Апаринки",
-   "id":527,
-   "show": true
-   },
-   {
-   "name":"МО",
-   "id":528,
-   "show": true
-   },
-   {
-   "name":"Железноводск",
-   "id":529,
-   "show": true
-   }
-            
-    ]  
-      }
+    "cities": [
+        {
+            "name": "Великий Новгород",
+            "id": 1,
+            "show": true
+        },
+        {
+            "name": "Майкоп",
+            "id": 2,
+            "show": true
+        },
+        {
+            "name": "Оренбург",
+            "id": 3,
+            "show": true
+        },
+        {
+            "name": "Пенза",
+            "id": 4,
+            "show": true
+        },
+        {
+            "name": "Пермь",
+            "id": 5,
+            "show": true
+        },
+        {
+            "name": "Жуковский",
+            "id": 6,
+            "show": true
+        },
+        {
+            "name": "Анадырь",
+            "id": 7,
+            "show": true
+        },
+        {
+            "name": "Архангельск",
+            "id": 8,
+            "show": true
+        },
+        {
+            "name": "Владивосток",
+            "id": 9,
+            "show": true
+        },
+        {
+            "name": "Липецк",
+            "id": 10,
+            "show": true
+        },
+        {
+            "name": "Алексин",
+            "id": 11,
+            "show": true
+        },
+        {
+            "name": "Вологда",
+            "id": 12,
+            "show": true
+        },
+        {
+            "name": "Казань",
+            "id": 13,
+            "show": true
+        },
+        {
+            "name": "Калуга",
+            "id": 14,
+            "show": true
+        },
+        {
+            "name": "Тамбов",
+            "id": 15,
+            "show": true
+        },
+        {
+            "name": "Тверь",
+            "id": 16,
+            "show": true
+        },
+        {
+            "name": "Красногорск",
+            "id": 17,
+            "show": true
+        },
+        {
+            "name": "Нижний Новгород",
+            "id": 18,
+            "show": true
+        },
+        {
+            "name": "НижнийТагил",
+            "id": 19,
+            "show": true
+        },
+        {
+            "name": "Петрозаводск",
+            "id": 20,
+            "show": true
+        },
+        {
+            "name": "Железногорск",
+            "id": 21,
+            "show": true
+        },
+        {
+            "name": "Калининград",
+            "id": 22,
+            "show": true
+        },
+        {
+            "name": "Киров",
+            "id": 23,
+            "show": true
+        },
+        {
+            "name": "Сыктывкар",
+            "id": 24,
+            "show": true
+        },
+        {
+            "name": "Звенигород",
+            "id": 25,
+            "show": true
+        },
+        {
+            "name": "Балашиха",
+            "id": 26,
+            "show": true
+        },
+        {
+            "name": "Долгопрудный",
+            "id": 27,
+            "show": true
+        },
+        {
+            "name": "Лыткарино",
+            "id": 28,
+            "show": true
+        },
+        {
+            "name": "Владимир",
+            "id": 29,
+            "show": true
+        },
+        {
+            "name": "Махачкала",
+            "id": 30,
+            "show": true
+        },
+        {
+            "name": "Мурманск",
+            "id": 31,
+            "show": true
+        },
+        {
+            "name": "Подольск",
+            "id": 32,
+            "show": true
+        },
+        {
+            "name": "Владикавказ",
+            "id": 33,
+            "show": true
+        },
+        {
+            "name": "Кострома",
+            "id": 34,
+            "show": true
+        },
+        {
+            "name": "Пятигорск",
+            "id": 35,
+            "show": true
+        },
+        {
+            "name": "Балахна",
+            "id": 36,
+            "show": true
+        },
+        {
+            "name": "Горно-Алтайск",
+            "id": 37,
+            "show": true
+        },
+        {
+            "name": "Орск",
+            "id": 38,
+            "show": true
+        },
+        {
+            "name": "Нальчик",
+            "id": 39,
+            "show": true
+        },
+        {
+            "name": "Рязань",
+            "id": 40,
+            "show": true
+        },
+        {
+            "name": "Черкесск",
+            "id": 41,
+            "show": true
+        },
+        {
+            "name": "Нарьян-Мар",
+            "id": 42,
+            "show": true
+        },
+        {
+            "name": "Новосибирск",
+            "id": 43,
+            "show": true
+        },
+        {
+            "name": "Бугульма",
+            "id": 44,
+            "show": true
+        },
+        {
+            "name": "Реутов",
+            "id": 45,
+            "show": true
+        },
+        {
+            "name": "Иркутск",
+            "id": 46,
+            "show": true
+        },
+        {
+            "name": "Кемерово",
+            "id": 47,
+            "show": true
+        },
+        {
+            "name": "Кызыл",
+            "id": 48,
+            "show": true
+        },
+        {
+            "name": "Юрга",
+            "id": 49,
+            "show": true
+        },
+        {
+            "name": "Солнечногорск",
+            "id": 50,
+            "show": true
+        },
+        {
+            "name": "Барнаул",
+            "id": 51,
+            "show": true
+        },
+        {
+            "name": "НабережныеЧелны",
+            "id": 52,
+            "show": true
+        },
+        {
+            "name": "Тольятти",
+            "id": 53,
+            "show": true
+        },
+        {
+            "name": "Уссурийск",
+            "id": 54,
+            "show": true
+        },
+        {
+            "name": "Уфа",
+            "id": 55,
+            "show": true
+        },
+        {
+            "name": "Чита",
+            "id": 56,
+            "show": true
+        },
+        {
+            "name": "Магадан",
+            "id": 57,
+            "show": true
+        },
+        {
+            "name": "Хабаровск",
+            "id": 58,
+            "show": true
+        },
+        {
+            "name": "Элиста",
+            "id": 59,
+            "show": true
+        },
+        {
+            "name": "Йошкар-Ола",
+            "id": 60,
+            "show": true
+        },
+        {
+            "name": "Ноябрьск",
+            "id": 61,
+            "show": true
+        },
+        {
+            "name": "Санкт-Петербург",
+            "id": 62,
+            "show": true
+        },
+        {
+            "name": "Чистополь",
+            "id": 63,
+            "show": true
+        },
+        {
+            "name": "Псков",
+            "id": 64,
+            "show": true
+        },
+        {
+            "name": "Ростов-на-Дону",
+            "id": 65,
+            "show": true
+        },
+        {
+            "name": "Саратов",
+            "id": 66,
+            "show": true
+        },
+        {
+            "name": "Стерлитамак",
+            "id": 67,
+            "show": true
+        },
+        {
+            "name": "Магнитогорск",
+            "id": 68,
+            "show": true
+        },
+        {
+            "name": "Саранск",
+            "id": 69,
+            "show": true
+        },
+        {
+            "name": "Сочи",
+            "id": 70,
+            "show": true
+        },
+        {
+            "name": "Ханты-Мансийск",
+            "id": 71,
+            "show": true
+        },
+        {
+            "name": "Челябинск",
+            "id": 72,
+            "show": true
+        },
+        {
+            "name": "Миасс",
+            "id": 73,
+            "show": true
+        },
+        {
+            "name": "Комсомольск-на-Амуре",
+            "id": 74,
+            "show": true
+        },
+        {
+            "name": "Краснодар",
+            "id": 75,
+            "show": true
+        },
+        {
+            "name": "Омск",
+            "id": 76,
+            "show": true
+        },
+        {
+            "name": "Астрахань",
+            "id": 77,
+            "show": true
+        },
+        {
+            "name": "Братск",
+            "id": 78,
+            "show": true
+        },
+        {
+            "name": "Курган",
+            "id": 79,
+            "show": true
+        },
+        {
+            "name": "Домодедово",
+            "id": 80,
+            "show": true
+        },
+        {
+            "name": "Пушкино",
+            "id": 81,
+            "show": true
+        },
+        {
+            "name": "Ставрополь",
+            "id": 82,
+            "show": true
+        },
+        {
+            "name": "Сургут",
+            "id": 83,
+            "show": true
+        },
+        {
+            "name": "Выкса",
+            "id": 84,
+            "show": true
+        },
+        {
+            "name": "Видное",
+            "id": 85,
+            "show": true
+        },
+        {
+            "name": "Котельники",
+            "id": 86,
+            "show": true
+        },
+        {
+            "name": "Таганрог",
+            "id": 87,
+            "show": true
+        },
+        {
+            "name": "Абакан",
+            "id": 88,
+            "show": true
+        },
+        {
+            "name": "Екатеринбург",
+            "id": 89,
+            "show": true
+        },
+        {
+            "name": "Красноярск",
+            "id": 90,
+            "show": true
+        },
+        {
+            "name": "Мытищи",
+            "id": 91,
+            "show": true
+        },
+        {
+            "name": "Александров",
+            "id": 92,
+            "show": true
+        },
+        {
+            "name": "Каменск-Уральский",
+            "id": 93,
+            "show": true
+        },
+        {
+            "name": "Новороссийск",
+            "id": 94,
+            "show": true
+        },
+        {
+            "name": "Петропавловск-Камчатский",
+            "id": 95,
+            "show": true
+        },
+        {
+            "name": "Тобольск",
+            "id": 96,
+            "show": true
+        },
+        {
+            "name": "Лобня",
+            "id": 97,
+            "show": true
+        },
+        {
+            "name": "Альметьевск",
+            "id": 98,
+            "show": true
+        },
+        {
+            "name": "Белгород",
+            "id": 99,
+            "show": true
+        },
+        {
+            "name": "Химки",
+            "id": 100,
+            "show": true
+        },
+        {
+            "name": "Волгоград",
+            "id": 101,
+            "show": true
+        },
+        {
+            "name": "Самара",
+            "id": 102,
+            "show": true
+        },
+        {
+            "name": "Томск",
+            "id": 103,
+            "show": true
+        },
+        {
+            "name": "Тюмень",
+            "id": 104,
+            "show": true
+        },
+        {
+            "name": "Ульяновск",
+            "id": 105,
+            "show": true
+        },
+        {
+            "name": "Дзержинский",
+            "id": 106,
+            "show": true
+        },
+        {
+            "name": "Курск",
+            "id": 107,
+            "show": true
+        },
+        {
+            "name": "Находка",
+            "id": 108,
+            "show": true
+        },
+        {
+            "name": "Раменское",
+            "id": 109,
+            "show": true
+        },
+        {
+            "name": "Ачинск",
+            "id": 110,
+            "show": true
+        },
+        {
+            "name": "Биробиджан",
+            "id": 111,
+            "show": true
+        },
+        {
+            "name": "Москва",
+            "id": 112,
+            "show": true
+        },
+        {
+            "name": "Ярославль",
+            "id": 113,
+            "show": true
+        },
+        {
+            "name": "Воронеж",
+            "id": 114,
+            "show": true
+        },
+        {
+            "name": "Грозный",
+            "id": 115,
+            "show": true
+        },
+        {
+            "name": "Орел",
+            "id": 116,
+            "show": true
+        },
+        {
+            "name": "Прокопьевск",
+            "id": 117,
+            "show": true
+        },
+        {
+            "name": "Улан-Удэ",
+            "id": 118,
+            "show": true
+        },
+        {
+            "name": "Иваново",
+            "id": 119,
+            "show": true
+        },
+        {
+            "name": "Нижневартовск",
+            "id": 120,
+            "show": true
+        },
+        {
+            "name": "Новокузнецк",
+            "id": 121,
+            "show": true
+        },
+        {
+            "name": "Чебоксары",
+            "id": 122,
+            "show": true
+        },
+        {
+            "name": "Люберцы",
+            "id": 123,
+            "show": true
+        },
+        {
+            "name": "Бийск",
+            "id": 124,
+            "show": true
+        },
+        {
+            "name": "Ижевск",
+            "id": 125,
+            "show": true
+        },
+        {
+            "name": "Тула",
+            "id": 126,
+            "show": true
+        },
+        {
+            "name": "Южно-Сахалинск",
+            "id": 127,
+            "show": true
+        },
+        {
+            "name": "Якутск",
+            "id": 128,
+            "show": true
+        },
+        {
+            "name": "Смоленск",
+            "id": 129,
+            "show": true
+        },
+        {
+            "name": "Благовещенск",
+            "id": 130,
+            "show": true
+        },
+        {
+            "name": "Брянск",
+            "id": 131,
+            "show": true
+        },
+        {
+            "name": "Рыбинск",
+            "id": 132,
+            "show": true
+        },
+        {
+            "name": "Бердск",
+            "id": 219,
+            "show": true
+        },
+        {
+            "name": "Саров",
+            "id": 220,
+            "show": true
+        },
+        {
+            "name": "Артем",
+            "id": 221,
+            "show": true
+        },
+        {
+            "name": "Московский",
+            "id": 222,
+            "show": true
+        },
+        {
+            "name": "Зеленоградск",
+            "id": 223,
+            "show": true
+        },
+        {
+            "name": "Томилино",
+            "id": 224,
+            "show": true
+        },
+        {
+            "name": "Троицк",
+            "id": 225,
+            "show": true
+        },
+        {
+            "name": "Дубна",
+            "id": 226,
+            "show": true
+        },
+        {
+            "name": "Ивантеевка",
+            "id": 227,
+            "show": true
+        },
+        {
+            "name": "Тихвин",
+            "id": 228,
+            "show": true
+        },
+        {
+            "name": "Березники",
+            "id": 229,
+            "show": true
+        },
+        {
+            "name": "Дивногорск",
+            "id": 230,
+            "show": true
+        },
+        {
+            "name": "Саяногорск",
+            "id": 231,
+            "show": true
+        },
+        {
+            "name": "Волхов",
+            "id": 232,
+            "show": true
+        },
+        {
+            "name": "Кириши",
+            "id": 233,
+            "show": true
+        },
+        {
+            "name": "Лесосибирск",
+            "id": 234,
+            "show": true
+        },
+        {
+            "name": "Сестрорецк",
+            "id": 235,
+            "show": true
+        },
+        {
+            "name": "д.Ликино",
+            "id": 236,
+            "show": true
+        },
+        {
+            "name": "Ростов Великий",
+            "id": 237,
+            "show": true
+        },
+        {
+            "name": "Бор",
+            "id": 238,
+            "show": true
+        },
+        {
+            "name": "Ишим",
+            "id": 239,
+            "show": true
+        },
+        {
+            "name": "Северск",
+            "id": 240,
+            "show": true
+        },
+        {
+            "name": "Канск",
+            "id": 241,
+            "show": true
+        },
+        {
+            "name": "Чапаевск",
+            "id": 242,
+            "show": true
+        },
+        {
+            "name": "Сызрань",
+            "id": 243,
+            "show": true
+        },
+        {
+            "name": "Павлово",
+            "id": 244,
+            "show": true
+        },
+        {
+            "name": "Черногорск",
+            "id": 245,
+            "show": true
+        },
+        {
+            "name": "Серов",
+            "id": 246,
+            "show": true
+        },
+        {
+            "name": "Красное Село",
+            "id": 247,
+            "show": true
+        },
+        {
+            "name": "Кронштадт",
+            "id": 248,
+            "show": true
+        },
+        {
+            "name": "Павловск",
+            "id": 249,
+            "show": true
+        },
+        {
+            "name": "Шлиссельбург",
+            "id": 250,
+            "show": true
+        },
+        {
+            "name": "д.Картмазово",
+            "id": 251,
+            "show": true
+        },
+        {
+            "name": "Егорьевск",
+            "id": 252,
+            "show": true
+        },
+        {
+            "name": "Железнодорожный",
+            "id": 253,
+            "show": true
+        },
+        {
+            "name": "Клин",
+            "id": 254,
+            "show": true
+        },
+        {
+            "name": "Можайск",
+            "id": 255,
+            "show": true
+        },
+        {
+            "name": "Озеры",
+            "id": 256,
+            "show": true
+        },
+        {
+            "name": "Павловский посад",
+            "id": 257,
+            "show": true
+        },
+        {
+            "name": "Пущино",
+            "id": 258,
+            "show": true
+        },
+        {
+            "name": "Сергиев Посад",
+            "id": 259,
+            "show": true
+        },
+        {
+            "name": "Шатура",
+            "id": 260,
+            "show": true
+        },
+        {
+            "name": "Коммунарка",
+            "id": 261,
+            "show": true
+        },
+        {
+            "name": "Апрелевка",
+            "id": 262,
+            "show": true
+        },
+        {
+            "name": "Фрязино",
+            "id": 263,
+            "show": true
+        },
+        {
+            "name": "Бронницы",
+            "id": 264,
+            "show": true
+        },
+        {
+            "name": "Соликамск",
+            "id": 265,
+            "show": true
+        },
+        {
+            "name": "Кимры",
+            "id": 266,
+            "show": true
+        },
+        {
+            "name": "Лысьва",
+            "id": 267,
+            "show": true
+        },
+        {
+            "name": "Марфино",
+            "id": 268,
+            "show": true
+        },
+        {
+            "name": "Кунгур",
+            "id": 269,
+            "show": true
+        },
+        {
+            "name": "Воскресенск",
+            "id": 270,
+            "show": true
+        },
+        {
+            "name": "Кашира",
+            "id": 271,
+            "show": true
+        },
+        {
+            "name": "Волоколамск",
+            "id": 272,
+            "show": true
+        },
+        {
+            "name": "Новоалтайск",
+            "id": 273,
+            "show": true
+        },
+        {
+            "name": "Зеленодольск",
+            "id": 274,
+            "show": true
+        },
+        {
+            "name": "Елабуга",
+            "id": 275,
+            "show": true
+        },
+        {
+            "name": "Рубцовск",
+            "id": 276,
+            "show": true
+        },
+        {
+            "name": "Волжск",
+            "id": 277,
+            "show": true
+        },
+        {
+            "name": "Медногорск",
+            "id": 278,
+            "show": true
+        },
+        {
+            "name": "Обь",
+            "id": 279,
+            "show": true
+        },
+        {
+            "name": "Гай",
+            "id": 280,
+            "show": true
+        },
+        {
+            "name": "Новотроицк",
+            "id": 281,
+            "show": true
+        },
+        {
+            "name": "Соль-Илецк",
+            "id": 282,
+            "show": true
+        },
+        {
+            "name": "Анапа",
+            "id": 283,
+            "show": true
+        },
+        {
+            "name": "Апатиты",
+            "id": 284,
+            "show": true
+        },
+        {
+            "name": "Березовский",
+            "id": 285,
+            "show": true
+        },
+        {
+            "name": "Бирск",
+            "id": 286,
+            "show": true
+        },
+        {
+            "name": "Благодарный",
+            "id": 287,
+            "show": true
+        },
+        {
+            "name": "Бузулук",
+            "id": 288,
+            "show": true
+        },
+        {
+            "name": "Верхняя Пышма",
+            "id": 289,
+            "show": true
+        },
+        {
+            "name": "Воткинск",
+            "id": 290,
+            "show": true
+        },
+        {
+            "name": "Вятские Поляны",
+            "id": 291,
+            "show": true
+        },
+        {
+            "name": "Геленджик",
+            "id": 292,
+            "show": true
+        },
+        {
+            "name": "Георгиевск",
+            "id": 293,
+            "show": true
+        },
+        {
+            "name": "Глазов",
+            "id": 294,
+            "show": true
+        },
+        {
+            "name": "Ессентуки",
+            "id": 295,
+            "show": true
+        },
+        {
+            "name": "Заводоуковск",
+            "id": 296,
+            "show": true
+        },
+        {
+            "name": "Заволжье",
+            "id": 297,
+            "show": true
+        },
+        {
+            "name": "Ишимбай",
+            "id": 298,
+            "show": true
+        },
+        {
+            "name": "Канаш",
+            "id": 299,
+            "show": true
+        },
+        {
+            "name": "Кирово-Чепецк",
+            "id": 300,
+            "show": true
+        },
+        {
+            "name": "Кисловодск",
+            "id": 301,
+            "show": true
+        },
+        {
+            "name": "Кондопога",
+            "id": 302,
+            "show": true
+        },
+        {
+            "name": "Копейск",
+            "id": 303,
+            "show": true
+        },
+        {
+            "name": "Котельнич",
+            "id": 304,
+            "show": true
+        },
+        {
+            "name": "Лениногорск",
+            "id": 305,
+            "show": true
+        },
+        {
+            "name": "Ломоносов",
+            "id": 306,
+            "show": true
+        },
+        {
+            "name": "Мелеуз",
+            "id": 307,
+            "show": true
+        },
+        {
+            "name": "Минеральные Воды",
+            "id": 308,
+            "show": true
+        },
+        {
+            "name": "Михайловск",
+            "id": 309,
+            "show": true
+        },
+        {
+            "name": "Можга",
+            "id": 310,
+            "show": true
+        },
+        {
+            "name": "Невинномысск",
+            "id": 311,
+            "show": true
+        },
+        {
+            "name": "Нефтекамск",
+            "id": 312,
+            "show": true
+        },
+        {
+            "name": "Нефтеюганск",
+            "id": 313,
+            "show": true
+        },
+        {
+            "name": "Новодвинск",
+            "id": 314,
+            "show": true
+        },
+        {
+            "name": "Новокуйбышевск",
+            "id": 315,
+            "show": true
+        },
+        {
+            "name": "НовыйУренгой",
+            "id": 316,
+            "show": true
+        },
+        {
+            "name": "Первоуральск",
+            "id": 317,
+            "show": true
+        },
+        {
+            "name": "Переславль-Залесский",
+            "id": 318,
+            "show": true
+        },
+        {
+            "name": "Ревда",
+            "id": 319,
+            "show": true
+        },
+        {
+            "name": "Рузаевка",
+            "id": 320,
+            "show": true
+        },
+        {
+            "name": "Салават",
+            "id": 321,
+            "show": true
+        },
+        {
+            "name": "Сарапул",
+            "id": 322,
+            "show": true
+        },
+        {
+            "name": "Северодвинск",
+            "id": 323,
+            "show": true
+        },
+        {
+            "name": "Семёнов",
+            "id": 324,
+            "show": true
+        },
+        {
+            "name": "Сибай",
+            "id": 325,
+            "show": true
+        },
+        {
+            "name": "Среднеуральск",
+            "id": 326,
+            "show": true
+        },
+        {
+            "name": "Старый Оскол",
+            "id": 327,
+            "show": true
+        },
+        {
+            "name": "Туймазы",
+            "id": 328,
+            "show": true
+        },
+        {
+            "name": "Тутаев",
+            "id": 329,
+            "show": true
+        },
+        {
+            "name": "Углич",
+            "id": 330,
+            "show": true
+        },
+        {
+            "name": "Чайковский",
+            "id": 331,
+            "show": true
+        },
+        {
+            "name": "Ялуторовск",
+            "id": 332,
+            "show": true
+        },
+        {
+            "name": "Сходня",
+            "id": 333,
+            "show": true
+        },
+        {
+            "name": "Троицк",
+            "id": 334,
+            "show": true
+        },
+        {
+            "name": "Минусинск",
+            "id": 336,
+            "show": true
+        },
+        {
+            "name": "Мончегорск",
+            "id": 337,
+            "show": true
+        },
+        {
+            "name": "Сухойлог",
+            "id": 338,
+            "show": true
+        },
+        {
+            "name": "Сысерть",
+            "id": 339,
+            "show": true
+        },
+        {
+            "name": "Щербинка",
+            "id": 340,
+            "show": true
+        },
+        {
+            "name": "Губкин",
+            "id": 341,
+            "show": true
+        },
+        {
+            "name": "Карачев",
+            "id": 342,
+            "show": true
+        },
+        {
+            "name": "Клинцы",
+            "id": 343,
+            "show": true
+        },
+        {
+            "name": "Гусь-Хрустальный",
+            "id": 344,
+            "show": true
+        },
+        {
+            "name": "Камышин",
+            "id": 345,
+            "show": true
+        },
+        {
+            "name": "Михайловка",
+            "id": 346,
+            "show": true
+        },
+        {
+            "name": "Урюпинск",
+            "id": 347,
+            "show": true
+        },
+        {
+            "name": "Великий Устюг",
+            "id": 348,
+            "show": true
+        },
+        {
+            "name": "Сокол",
+            "id": 349,
+            "show": true
+        },
+        {
+            "name": "Лиски",
+            "id": 350,
+            "show": true
+        },
+        {
+            "name": "Нововоронеж",
+            "id": 351,
+            "show": true
+        },
+        {
+            "name": "Россошь",
+            "id": 352,
+            "show": true
+        },
+        {
+            "name": "Семилуки",
+            "id": 353,
+            "show": true
+        },
+        {
+            "name": "Вичуга",
+            "id": 354,
+            "show": true
+        },
+        {
+            "name": "Кинешма",
+            "id": 355,
+            "show": true
+        },
+        {
+            "name": "Родники",
+            "id": 356,
+            "show": true
+        },
+        {
+            "name": "Шуя",
+            "id": 357,
+            "show": true
+        },
+        {
+            "name": "Кондрово",
+            "id": 358,
+            "show": true
+        },
+        {
+            "name": "Малоярославец",
+            "id": 359,
+            "show": true
+        },
+        {
+            "name": "Волгореченск",
+            "id": 360,
+            "show": true
+        },
+        {
+            "name": "Белореченск",
+            "id": 361,
+            "show": true
+        },
+        {
+            "name": "Кореновск",
+            "id": 362,
+            "show": true
+        },
+        {
+            "name": "Красная Поляна",
+            "id": 363,
+            "show": true
+        },
+        {
+            "name": "Новая Адыгея",
+            "id": 364,
+            "show": true
+        },
+        {
+            "name": "Павловская",
+            "id": 365,
+            "show": true
+        },
+        {
+            "name": "Темрюк",
+            "id": 366,
+            "show": true
+        },
+        {
+            "name": "Тимашевск",
+            "id": 367,
+            "show": true
+        },
+        {
+            "name": "Туапсе",
+            "id": 368,
+            "show": true
+        },
+        {
+            "name": "Грязи",
+            "id": 369,
+            "show": true
+        },
+        {
+            "name": "Елец",
+            "id": 370,
+            "show": true
+        },
+        {
+            "name": "Лебедянь",
+            "id": 371,
+            "show": true
+        },
+        {
+            "name": "Оленегорск",
+            "id": 372,
+            "show": true
+        },
+        {
+            "name": "Семенов",
+            "id": 373,
+            "show": true
+        },
+        {
+            "name": "Боровичи",
+            "id": 374,
+            "show": true
+        },
+        {
+            "name": "Старая Русса",
+            "id": 375,
+            "show": true
+        },
+        {
+            "name": "Кузнецк",
+            "id": 376,
+            "show": true
+        },
+        {
+            "name": "Великие Луки",
+            "id": 377,
+            "show": true
+        },
+        {
+            "name": "Назрань",
+            "id": 378,
+            "show": true
+        },
+        {
+            "name": "Дербент",
+            "id": 379,
+            "show": true
+        },
+        {
+            "name": "Каспийск",
+            "id": 380,
+            "show": true
+        },
+        {
+            "name": "Азов",
+            "id": 381,
+            "show": true
+        },
+        {
+            "name": "Волгодонск",
+            "id": 382,
+            "show": true
+        },
+        {
+            "name": "Гуково",
+            "id": 383,
+            "show": true
+        },
+        {
+            "name": "Каменск-Шахтинский",
+            "id": 384,
+            "show": true
+        },
+        {
+            "name": "Миллерово",
+            "id": 385,
+            "show": true
+        },
+        {
+            "name": "Сальск",
+            "id": 386,
+            "show": true
+        },
+        {
+            "name": "Мичуринск",
+            "id": 387,
+            "show": true
+        },
+        {
+            "name": "Вышний Волочек",
+            "id": 388,
+            "show": true
+        },
+        {
+            "name": "Конаково",
+            "id": 389,
+            "show": true
+        },
+        {
+            "name": "Ржев",
+            "id": 390,
+            "show": true
+        },
+        {
+            "name": "Торжок",
+            "id": 391,
+            "show": true
+        },
+        {
+            "name": "Донской",
+            "id": 392,
+            "show": true
+        },
+        {
+            "name": "Ефремов",
+            "id": 393,
+            "show": true
+        },
+        {
+            "name": "Новомосковск",
+            "id": 394,
+            "show": true
+        },
+        {
+            "name": "Узловая",
+            "id": 395,
+            "show": true
+        },
+        {
+            "name": "Щекино",
+            "id": 396,
+            "show": true
+        },
+        {
+            "name": "Луга",
+            "id": 397,
+            "show": true
+        },
+        {
+            "name": "Никольское",
+            "id": 398,
+            "show": true
+        },
+        {
+            "name": "Парголово",
+            "id": 399,
+            "show": true
+        },
+        {
+            "name": "Петергоф",
+            "id": 400,
+            "show": true
+        },
+        {
+            "name": "Тосно",
+            "id": 401,
+            "show": true
+        },
+        {
+            "name": "Высоковск",
+            "id": 402,
+            "show": true
+        },
+        {
+            "name": "Голицыно",
+            "id": 403,
+            "show": true
+        },
+        {
+            "name": "Зарайск",
+            "id": 404,
+            "show": true
+        },
+        {
+            "name": "Красково",
+            "id": 405,
+            "show": true
+        },
+        {
+            "name": "Краснозаводск",
+            "id": 406,
+            "show": true
+        },
+        {
+            "name": "Лосино-Петровский",
+            "id": 407,
+            "show": true
+        },
+        {
+            "name": "Луховицы",
+            "id": 408,
+            "show": true
+        },
+        {
+            "name": "Монино",
+            "id": 409,
+            "show": true
+        },
+        {
+            "name": "Нахабино",
+            "id": 410,
+            "show": true
+        },
+        {
+            "name": "Протвино",
+            "id": 411,
+            "show": true
+        },
+        {
+            "name": "Рошаль",
+            "id": 412,
+            "show": true
+        },
+        {
+            "name": "Руза",
+            "id": 413,
+            "show": true
+        },
+        {
+            "name": "Хотьково",
+            "id": 414,
+            "show": true
+        },
+        {
+            "name": "Электрогорск",
+            "id": 415,
+            "show": true
+        },
+        {
+            "name": "Электроугли",
+            "id": 416,
+            "show": true
+        },
+        {
+            "name": "Яхрома",
+            "id": 417,
+            "show": true
+        },
+        {
+            "name": "Красноармейск",
+            "id": 418,
+            "show": true
+        },
+        {
+            "name": "Коркино",
+            "id": 419,
+            "show": true
+        },
+        {
+            "name": "Внуковское",
+            "id": 420,
+            "show": true
+        },
+        {
+            "name": "Ангарск",
+            "id": 453,
+            "show": true
+        },
+        {
+            "name": "Арзамас",
+            "id": 454,
+            "show": true
+        },
+        {
+            "name": "Армавир",
+            "id": 455,
+            "show": true
+        },
+        {
+            "name": "Балаково",
+            "id": 456,
+            "show": true
+        },
+        {
+            "name": "Балтийск",
+            "id": 457,
+            "show": true
+        },
+        {
+            "name": "Батайск",
+            "id": 458,
+            "show": true
+        },
+        {
+            "name": "Белорецк",
+            "id": 459,
+            "show": true
+        },
+        {
+            "name": "Всеволожск",
+            "id": 460,
+            "show": true
+        },
+        {
+            "name": "Волжский",
+            "id": 461,
+            "show": true
+        },
+        {
+            "name": "Гатчина",
+            "id": 462,
+            "show": true
+        },
+        {
+            "name": "Выборг",
+            "id": 463,
+            "show": true
+        },
+        {
+            "name": "Дзержинск",
+            "id": 464,
+            "show": true
+        },
+        {
+            "name": "Димитровград",
+            "id": 465,
+            "show": true
+        },
+        {
+            "name": "Зеленоград",
+            "id": 466,
+            "show": true
+        },
+        {
+            "name": "Ковров",
+            "id": 467,
+            "show": true
+        },
+        {
+            "name": "Коломна",
+            "id": 468,
+            "show": true
+        },
+        {
+            "name": "Колпино",
+            "id": 469,
+            "show": true
+        },
+        {
+            "name": "Королев",
+            "id": 470,
+            "show": true
+        },
+        {
+            "name": "Краснокамск",
+            "id": 471,
+            "show": true
+        },
+        {
+            "name": "Ленинск-Кузнецкий",
+            "id": 472,
+            "show": true
+        },
+        {
+            "name": "Магас",
+            "id": 473,
+            "show": true
+        },
+        {
+            "name": "Муром",
+            "id": 474,
+            "show": true
+        },
+        {
+            "name": "Нижнекамск",
+            "id": 475,
+            "show": true
+        },
+        {
+            "name": "Новочебоксарск",
+            "id": 476,
+            "show": true
+        },
+        {
+            "name": "Новочеркасск",
+            "id": 477,
+            "show": true
+        },
+        {
+            "name": "Новошахтинск",
+            "id": 478,
+            "show": true
+        },
+        {
+            "name": "Ногинск",
+            "id": 479,
+            "show": true
+        },
+        {
+            "name": "Обнинск",
+            "id": 480,
+            "show": true
+        },
+        {
+            "name": "Одинцово",
+            "id": 481,
+            "show": true
+        },
+        {
+            "name": "Орехово-Зуево",
+            "id": 482,
+            "show": true
+        },
+        {
+            "name": "Пермский городской округ",
+            "id": 483,
+            "show": true
+        },
+        {
+            "name": "Пушкин",
+            "id": 484,
+            "show": true
+        },
+        {
+            "name": "Светлогорск",
+            "id": 485,
+            "show": true
+        },
+        {
+            "name": "Сосновоборск",
+            "id": 486,
+            "show": true
+        },
+        {
+            "name": "Серпухов",
+            "id": 487,
+            "show": true
+        },
+        {
+            "name": "Череповец",
+            "id": 488,
+            "show": true
+        },
+        {
+            "name": "Шахты",
+            "id": 489,
+            "show": true
+        },
+        {
+            "name": "Щелково",
+            "id": 490,
+            "show": true
+        },
+        {
+            "name": "Электросталь",
+            "id": 491,
+            "show": true
+        },
+        {
+            "name": "Энгельс",
+            "id": 492,
+            "show": true
+        },
+        {
+            "name": "Кингисепп",
+            "id": 493,
+            "show": true
+        },
+        {
+            "name": "Кировск",
+            "id": 494,
+            "show": true
+        },
+        {
+            "name": "Кудрово",
+            "id": 495,
+            "show": true
+        },
+        {
+            "name": "Мурино",
+            "id": 496,
+            "show": true
+        },
+        {
+            "name": "Сертолово",
+            "id": 497,
+            "show": true
+        },
+        {
+            "name": "СосновыйБор",
+            "id": 498,
+            "show": true
+        },
+        {
+            "name": "Боброво",
+            "id": 499,
+            "show": true
+        },
+        {
+            "name": "Вёшки",
+            "id": 500,
+            "show": true
+        },
+        {
+            "name": "Дмитровское",
+            "id": 501,
+            "show": true
+        },
+        {
+            "name": "Лопатино",
+            "id": 502,
+            "show": true
+        },
+        {
+            "name": "Немчиновка",
+            "id": 503,
+            "show": true
+        },
+        {
+            "name": "Новодрожжино",
+            "id": 504,
+            "show": true
+        },
+        {
+            "name": "Отрадное",
+            "id": 505,
+            "show": true
+        },
+        {
+            "name": "Павлино",
+            "id": 506,
+            "show": true
+        },
+        {
+            "name": "Подъячево",
+            "id": 507,
+            "show": true
+        },
+        {
+            "name": "Путилково",
+            "id": 508,
+            "show": true
+        },
+        {
+            "name": "Сосны",
+            "id": 509,
+            "show": true
+        },
+        {
+            "name": "Чёрное",
+            "id": 510,
+            "show": true
+        },
+        {
+            "name": "Шолохово",
+            "id": 511,
+            "show": true
+        },
+        {
+            "name": "Андреевка",
+            "id": 512,
+            "show": true
+        },
+        {
+            "name": "Дедовск",
+            "id": 513,
+            "show": true
+        },
+        {
+            "name": "Дмитров",
+            "id": 514,
+            "show": true
+        },
+        {
+            "name": "Истра",
+            "id": 515,
+            "show": true
+        },
+        {
+            "name": "Наро-Фоминск",
+            "id": 516,
+            "show": true
+        },
+        {
+            "name": "Октябрьский",
+            "id": 517,
+            "show": true
+        },
+        {
+            "name": "Ступино",
+            "id": 518,
+            "show": true
+        },
+        {
+            "name": "Чехов",
+            "id": 519,
+            "show": true
+        },
+        {
+            "name": "Луховка",
+            "id": 520,
+            "show": true
+        },
+        {
+            "name": "Кстово",
+            "id": 521,
+            "show": true
+        },
+        {
+            "name": "Аксай",
+            "id": 522,
+            "show": true
+        },
+        {
+            "name": "Красный Бор",
+            "id": 523,
+            "show": true
+        },
+        {
+            "name": "Верхнерусское",
+            "id": 524,
+            "show": true
+        },
+        {
+            "name": "Ногинский район",
+            "id": 526,
+            "show": true
+        },
+        {
+            "name": "Апаринки",
+            "id": 527,
+            "show": true
+        },
+        {
+            "name": "МО",
+            "id": 528,
+            "show": true
+        },
+        {
+            "name": "Железноводск",
+            "id": 529,
+            "show": true
+        }
+    ]
+}

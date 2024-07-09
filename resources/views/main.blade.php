@@ -6,7 +6,7 @@
 
 <div id="main" class="object-cover object-center mt-6 mb-12 rounded-lg w-full bg-white ">
 <img class="object-cover shadows-lg object-center w-full h-96  lg:h-screen blur-sm border-0  md:rounded-xl"  src="{{ url('images/fon.png')}}" alt="Купер - доставка супер">
-<div class="md:rounded-xl border-0 shadows-lg absolute object-cover mt-16 object-top  opacity-95 top-0 w-full h-96 lg:h-screen gradient">             
+<div class="md:rounded-xl border-0 shadows-lg absolute object-cover mt-16 object-top  opacity-95 top-0 w-full h-96 lg:h-screen fon-gradient">             
 </div>
 <img class="absolute object-center md:top-0 md:right-0  md:w-1/2 w-1/3  md:rounded-none hidden lg:block" src="{{ url('images/team.png')}}" alt="">
 
@@ -27,7 +27,7 @@
 </div>
 
 <div id="vacancy" class="inline-flex items-center justify-center w-full ">
-    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 gradient border-0 dark:bg-gray-700">
+    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
     <span class="absolute px-3 md:text-4xl text-2xl font-bold tracking-tight text-gray-900   bg-white  dark:text-white dark:bg-gray-900">Вакансии
 </span>
 </div>
@@ -36,12 +36,12 @@
 
 <div  class="flex justify-center items-center md:my-16 my-12 mx-2 ">
 
-<div class="grid gap-6  md:grid-cols-1">
+<div class="grid lg:gap-3  lg:grid-cols-2 md:grid-cols-1 md:gap-6 gap-4">
 
-<a href="{{ route('reg') }}" class="mx-2  hover:border-orange-400 flex flex-col hower:shadows-lg items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-<img class="object-cover object-top w-full rounded-t-lg h-48 md:h-96 md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/uni(4).png')}}" alt="">
+<div  class="mx-2   flex flex-col hover:shadow-gazprom hover:shadow-lg items-center bg-white gradient2 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+<img class="object-cover object-top w-full rounded-t-lg h-48 md:h-full md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/uni(4).png')}}" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal" >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-универсал (Быстрая доставка)</h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-универсал (Быстрая доставка)</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Доставка заказа до двери клиента на собственном авто. Закрепление за конкретным районом и зоной доставки радиусом до 8 км. За одну поездку водитель-универсал доставляет один заказ.</p>
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Условия</h5>
         <ul class="max-w-lg space-y-1 text-gray-500 list-inside dark:text-gray-400">
@@ -87,11 +87,18 @@
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
          </svg>
          Можно работать как на Android, так и на iOS
-    </li>    </div>
-</a>
+    </li>   
+    <li class="flex items-center ">
+    <a href="{{ route('reg', ['selectedType' => '3_1']) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
-<a href="{{ route('reg') }}" class="mx-2 flex flex-col items-center  hover:border-orange-400 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-96 md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/auto(2).png')}}" alt="">
+    </li>
+</ul>
+
+    </div>
+</div>
+
+<div class="mx-2 flex flex-col hover:shadow-gazprom hover:shadow-lg items-center bg-white gradient2  rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-full md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/auto(2).png')}}" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Водитель-курьер (Плановая доставка)</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Закрепляется за определённым супермаркетом или рестораном. Курьеру за один рейс даётся сразу несколько адресов, по которым надо доставить товары. Радиус доставки до 15 км
@@ -140,12 +147,17 @@
          </svg>
          Можно работать только на Android
     </li>
-</ul></p>
-    </div>
-</a>
+    <li class="flex items-center ">
+    <a href="{{ route('reg', ['selectedType' => 3]) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
-<a href="{{ route('reg') }}" class="mx-2 flex flex-col items-center hover:border-orange-400 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-96 md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/walk(4).png')}}" alt="">
+    </li>
+</ul>
+
+    </div>
+</div>
+
+<div class="mx-2 flex flex-col  hover:shadow-gazprom hover:shadow-lg items-center bg-white gradient2  rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-full md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/walk(4).png')}}" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Пеший курьер</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Пеший курьер забирает заказ и доставляет до двери клиента. Заказы поступают из ближайших магазинов и ресторанов. Радиус до 3 км</p>
@@ -192,11 +204,18 @@
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
             </svg>
             Можно работать с 16 лет при наличии самозанятости и письменного разрешения от родителей
-    </li>    </div>
-</a>
+    </li>   
+    <li class="flex items-center ">
+    <a href="{{ route('reg', ['selectedType' => 13]) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
-<a href="{{ route('reg') }}" class="mx-2 flex flex-col items-center hover:border-orange-400 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-96 md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/velo.png')}}" alt="">
+    </li>
+</ul>
+
+    </div>
+</div>
+
+<div class="mx-2 flex flex-col hover:shadow-gazprom hover:shadow-lg items-center bg-white gradient2  rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover object-top w-full rounded-t-lg h-48 md:h-full md:w-80 md:rounded-none md:rounded-s-lg" src="{{ url('images/velo.png')}}" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Велокурьер</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Велоуниверсал доставляет заказ до двери клиента на велосипеде. В территорию входит несколько магазинов.Радиус до 5 км</p>
@@ -244,12 +263,18 @@
             </svg>
             Можно работать с 16 лет при наличии самозанятости и письменного разрешения от родителей
     </li> 
-   </div>
-</a>
+    <li class="flex items-center ">
+    <a href="{{ route('reg', ['selectedType' => 15]) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
+
+    </li>
+</ul>
+
+    </div>
+</div>
 </div>
 </div>
 <div id="info" class="inline-flex items-center justify-center w-full">
-    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 gradient border-0 dark:bg-gray-700">
+    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
     <span class="absolute px-3 md:text-4xl text-2xl font-bold tracking-tight text-gray-900   bg-white  dark:text-white dark:bg-gray-900">Вот еще что вы получите
 
 </span>
@@ -260,43 +285,43 @@
 
 
 
-<div class="max-w-sm bg-white border hover:shadow-gazprom border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border-3 hover:shadow-gazprom gradient rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-center items-center mt-4">
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/record.svg')}}" alt="" />
 </div>
     <div class="p-5">
-            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Оплата вовремя</h5>
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Своевременные выплаты</h5>
 
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Получайте выплаты на карту каждую неделю</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Еженедельные выплаты на карту любого банка. </p>
 
     </div>
 </div>
 
-<div class="max-w-sm bg-white border hover:shadow-gazprom border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border-3 hover:shadow-gazprom gradient rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-center items-center mt-4">
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/pic.svg')}}" alt="" />
 </div>
     <div class="p-5">
-            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Район на ваш выбор</h5>
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Работу в удобном районе</h5>
 
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Рядом с домом или в центре города</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Рядом с домом или с университетом с возможностью работать только внутри района. </p>
 
     </div>
 </div>   
 
-<div class="max-w-sm bg-white border hover:shadow-gazprom border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border-3 hover:shadow-gazprom gradient rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-center items-center mt-4">
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/calendar.svg')}}" alt="" />
 </div>
     <div class="p-5">
-            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Свободный график</h5>
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Самостоятельное планирование рабочего дня</h5>
 
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Выходите на доставки, когда захотите</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Вы принимаете решение когда выходить на смену и сколько времени там находиться. </p>
 
     </div>
 </div>  
 
-<div class="max-w-sm bg-white border hover:shadow-gazprom border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border-3 hover:shadow-gazprom gradient rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-center items-center mt-4">
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/pers.svg')}}" alt="" />
 </div>
@@ -308,24 +333,24 @@
     </div>
 </div>   
 
-<div class="max-w-sm bg-white border hover:shadow-gazprom border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border-3 hover:shadow-gazprom gradient rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-center items-center mt-4">
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/cart.svg')}}" alt="" />
 </div>
     <div class="p-5">
-            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Свободный способ доставки</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Вы можете облегчить себе осуществление доставок в разы, совершая доставку на автомобиле, самокате/велосипеде или пешком</p>
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Возможность выбора способа доставки</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Доставлять заказы пешком, на велосипеде или авто- решать вам. Работа найдется для каждого.</p>
 
     </div>
 </div>   
 
-<div class="max-w-sm bg-white border hover:shadow-gazprom border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border-3 hover:shadow-gazprom gradient rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-center items-center mt-4">
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/shop.svg')}}" alt="" />
 </div>
     <div class="p-5">
-            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Экипировка</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Брендированная одежда на все времена года</p>
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Стильную и удобную экипировку</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Бесплатная экипировка поможет Вам быть заметнее для клиентов, а качественный материал формы позволяет сохранять первоначальный вид долгое время, не смотря на погодные условия. </p>
 
     </div>
 </div>  
@@ -333,11 +358,11 @@
 </div>
 </div>
 <div id="step" class="inline-flex items-center justify-center w-full">
-    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 gradient border-0 dark:bg-gray-700">
+    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
     <span class="absolute px-3 md:text-4xl text-2xl font-bold tracking-tight text-gray-900  bg-white  dark:text-white dark:bg-gray-900">Как начать?
 </span>
 </div>
-<div  class="flex justify-center items-center my-16 mx-2 ">
+<div  class="flex justify-center items-center my-12 mx-2">
 
 <ol class="items-center md:w-3/4 w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
     <li class="flex items-center text-gazprom dark:text-green-500 space-x-2.5 rtl:space-x-reverse">
@@ -345,7 +370,7 @@
         <span class="text-3xl flex items-center justify-center w-16 h-16 border border-gray-600 rounded-full shrink-0 dark:border-gray-500">
            1
         </span>
-        <a href="{{ route('reg') }}">
+        <a href="http://dangalah.online/reg">
         <h3 class="text-2xl font-medium leading-tight">Первый шаг</h3>
         <p class="text-xl">Заполните форму регистрации</p>
         </a>
@@ -369,18 +394,16 @@
         </span>
     </li>
 </ol>
-
-
 </div>
 
 
 <div id="step" class="inline-flex items-center justify-center w-full">
-    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 gradient border-0 dark:bg-gray-700">
+    <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
     <span class="absolute px-3 md:text-4xl text-2xl font-bold tracking-tight text-gray-900   bg-white  dark:text-white dark:bg-gray-900">Вопросы и ответы
 </span>
 </div>
 
-<div id="faq" class="flex justify-center items-center my-16 mx-2 ">
+<div id="faq" class="flex justify-center items-center my-16 mx-2 text-sm lg:text-base">
 
 <div id="accordion-open" data-accordion="open" class="md:w-2/3 w-full border-1 border-gray-200 rounded-xl">
   <h2 id="accordion-open-heading-1">

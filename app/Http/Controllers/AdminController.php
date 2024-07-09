@@ -2,39 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
+
 
 class AdminController extends Controller
 {
-    public function changheList(Request $request){
 
-    
-    $data = $request['data'];
+    public function updateCity(Request $request)
+    {
+        $data = $request->all();
 
-if ($data) {
-    // Загружаем текущее содержимое файла city.json
-    $file = 'city.json';
-    $current_data = json_decode(file_get_contents($file), true);
+        $filePath = public_path('city.json');
 
-    // Обновляем значения show для каждого города
-    foreach ($current_data['cities'] as &$city) {
-        $city_name = $city['name'];
-        if (isset($data['cities'][$city_name])) {
-            $city['show'] = $data['cities'][$city_name]['show'];
-        }
+        // Сохранение данных в файл city.json
+        File::put($filePath, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+        return response()->json(['message' => 'Data saved successfully']);
+    }
+    public function showLoginForm()
+    {
+        return view('login');
     }
 
-    // Записываем обновленные данные обратно в файл city.json
-    file_put_contents($file, json_encode($current_data, JSON_PRETTY_PRINT));
+    public function login(Request $request)
+    {
+        $credentials = $request->only('login', 'password');
 
-    // Отправляем ответ об успешном сохранении
-    http_response_code(200);
-    echo json_encode(['message' => 'Изменения сохранены успешно.']);
-} else {
-    // Отправляем ответ об ошибке
-    http_response_code(400);
-    echo json_encode(['error' => 'Произошла ошибка при сохранении изменений.']);
-}
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('admin');
+        }
+
+        return back()->withErrors([
+            'login' => 'The provided credentials do not match our records.',
+        ]);
     }
 }
