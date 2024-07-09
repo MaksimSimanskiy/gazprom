@@ -21,6 +21,7 @@ class AdminController extends Controller
         File::put($filePath, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
         return response()->json(['message' => 'Data saved successfully']);
+        
     }
     public function showLoginForm()
     {

@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="Kuper_icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="{{ url('js/scrips.js') }}"></script>
+    <!--<script src="{{ url('js/scrips.js') }}"></script>-->
 
     @vite(['resources/css/app.css','resources/js/app.js'])
 

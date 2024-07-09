@@ -4,8 +4,10 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <div id="cities-list" class="grid gap-1 m-2 mt-8 md:grid-cols-8 p-4"></div>
-    <button id="save-button" class="text-white left-1/2 bg-gazprom hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Сохранить</button>
+    <div id="vacancy" class="inline-flex items-center justify-center w-full ">
 
+    <button id="save-button" class="text-white flex transition-x-1/2 bg-blue-500 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Сохранить</button>
+    </div>
     <script>
         fetch('city.json')
             .then(response => response.json())
@@ -44,6 +46,7 @@
                         },
                         body: JSON.stringify(data)
                     });
+
                 }
             });
     </script>
