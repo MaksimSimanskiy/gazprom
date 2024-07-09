@@ -275,7 +275,7 @@
 </div>
 <div id="info" class="inline-flex items-center justify-center w-full">
     <hr class="md:w-2/3 w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
-    <span class="absolute px-3 md:text-4xl text-2xl font-bold tracking-tight text-gray-900   bg-white  dark:text-white dark:bg-gray-900">Вот еще что вы получите
+    <span class="absolute px-3 md:text-4xl text-2xl font-bold tracking-tight text-gray-900   bg-white  dark:text-white dark:bg-gray-900">Выбирая нас, вы получаете:
 
 </span>
 </div>
