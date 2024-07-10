@@ -63,7 +63,7 @@ $response = Http::withHeaders([
     ]
 ],$request->all());
      $responseData = $response->json();
-     $uuid = $responseData['details']['uuid'];
+     $uuid = $responseData['details'][0]['uuid'];
      $this->saveResponseData($responseData);
      return $uuid;
     }
