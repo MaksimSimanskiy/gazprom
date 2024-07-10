@@ -89,7 +89,7 @@
          Можно работать как на Android, так и на iOS
     </li>   
     <li class="flex items-center ">
-    <a href="{{ route('reg', ['selectedType' => '3_1']) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
+    <a href="{{ route('reg' }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
     </li>
 </ul>
@@ -148,7 +148,7 @@
          Можно работать только на Android
     </li>
     <li class="flex items-center ">
-    <a href="{{ route('reg', ['selectedType' => 3]) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
+    <a href="{{ route('reg' }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
     </li>
 </ul>
@@ -206,7 +206,7 @@
             Можно работать с 16 лет при наличии самозанятости и письменного разрешения от родителей
     </li>   
     <li class="flex items-center ">
-    <a href="{{ route('reg', ['selectedType' => 13]) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
+    <a href="{{ route('reg' }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
     </li>
 </ul>
@@ -264,7 +264,7 @@
             Можно работать с 16 лет при наличии самозанятости и письменного разрешения от родителей
     </li> 
     <li class="flex items-center ">
-    <a href="{{ route('reg', ['selectedType' => 15]) }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
+    <a href="{{ route('reg' }}" class="md:translate-x-1/2	mt-2 shadow-md text-white font-bold md:w-1/2 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg  px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Зарегистрироваться</a>
 
     </li>
 </ul>
