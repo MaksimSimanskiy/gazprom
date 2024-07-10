@@ -98,7 +98,7 @@
                     Вы успешно зарегистрировались. В скором времени мы с вами свяжемся и сообщим дальнейший порядок действий.
                 </p>
                 <p class="text-bold text-center leading-relaxed text-orange-500 dark:text-gray-400" id="response">
-                    <a href="{{ url('docs/ИнструкцияСбермаркет.pdf') }}">Инструкция для работы</a>
+                    <a class="text-orange-500" href="{{ url('docs/ИнструкцияСбермаркет.pdf') }}">Инструкция для работы</a>
                 </p>
             </div>
             <!-- Modal footer -->
