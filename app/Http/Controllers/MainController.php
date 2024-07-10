@@ -41,7 +41,7 @@ class MainController extends Controller
         $amo = new AmoController($first_name,$last_name,$phone,$dateb,$vacancy_id,$city_id,$city_name,$request_id,$sbresp,$fileName);
         $response = $amo -> send();
 
-        return $response;
+        return $sbresp;
 
        
         }

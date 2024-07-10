@@ -66,7 +66,7 @@ $responseData = $response->json();
 $uuid = $this->extractUuid($responseData);
 $this->saveResponseData($responseData);
 
-return $uuid;
+return $responseData;
     }
     private function extractUuid($responseData)
     {
