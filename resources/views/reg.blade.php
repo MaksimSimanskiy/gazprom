@@ -36,22 +36,19 @@
 
     <input type="date" name="dateb" id="dateb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="09.09.1999" />
 </div>
+<div>
+    <select id="city" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
+      <option selected disabled>Выберите город</option>
+   
+    </select>
+  
+  </div>
     <div>
   <select id="type" name="type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
-    <option {{ $selectedType === null ? 'selected' : '' }}>Выберите тип работы</option>
-    <option value="13" {{ $selectedType == '13' ? 'selected' : '' }}>Пеший курьер</option>
-    <option value="3" {{ $selectedType == '3' ? 'selected' : '' }}>Водитель-курьер (Плановая доставка)</option>
-    <option value="3_1" {{ $selectedType == '3_1' ? 'selected' : '' }}>Водитель-универсал (Быстрая доставка)</option>
-    <option value="15" {{ $selectedType == '15' ? 'selected' : '' }}>Велокурьер</option>
+    <option  selected disabled>Выберите тип работы</option>
   </select>
     </div>
-    <div>
-  <select id="city" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
-    <option selected>Выберите город</option>
- 
-  </select>
 
-</div>
   <input id="city_name" name="city_name" type="hidden" enctype="multipart/form-data">
     
     <div class="hidden" id="sixteen">
@@ -98,9 +95,11 @@
             <!-- Modal body -->
             <div class="p-4 md:p-5 space-y-4">
                 <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400" id="response">
-                    Вы успешно зарегистрировались! Мы скоро с вами свяжемся и сообщим что делать дальше
+                    Вы успешно зарегистрировались. В скором времени мы с вами свяжемся и сообщим дальнейший порядок действий.
                 </p>
-
+                <p class="text-bold text-center leading-relaxed text-orange-500 dark:text-gray-400" id="response">
+                    <a href="{{ url('docs/ИнструкцияСбермаркет.pdf') }}">Инструкция для работы</a>
+                </p>
             </div>
             <!-- Modal footer -->
 
@@ -188,29 +187,35 @@ $(document).ready(function(){
   document.getElementById('city_name').value = selectedCity;
 });
     // Функция для загрузки и обработки данных из файла city.json
-    function loadCities() {
-        fetch("{{ url('city.json') }}")
-        .then(response => response.json())
-        .then(data => {
-            const cities = data.cities;
-
-            // Фильтрация городов по полю 'show'
-            const filteredCities = cities.filter(city => city.show === true);
-
-            // Добавление отфильтрованных городов в выпадающий список
-            const selectElement = document.getElementById('city');
-            filteredCities.forEach(city => {
-                const option = document.createElement('option');
-                option.text = city.name;
-                option.value = city.id;
-                selectElement.add(option);
+    $(document).ready(function() {
+        $.getJSON("{{ url('city.json') }}", function(citiesData) {
+            // Populate city dropdown
+            citiesData.cities.forEach(function(city) {
+                if (city.show) {
+                    $('#city').append(new Option(city.name, city.id));
+                }
             });
-        })
-        .catch(error => console.error('Ошибка при загрузке файла city.json:', error));
-    }
 
-    // Вызов функции loadCities при загрузке страницы
-    document.addEventListener('DOMContentLoaded', loadCities);
+            // Event listener for city selection change
+            $('#city').change(function() {
+                var selectedCityId = $(this).val();
+                var selectedCity = citiesData.cities.find(city => city.id == selectedCityId);
+
+                // Clear the job type dropdown
+                $('#type').empty();
+                $('#type').append(new Option('Выберите тип работы', ''));
+
+                if (selectedCity) {
+                    // Add job types to the dropdown if the first element is true
+                    ['walk', 'plan', 'uni', 'velo'].forEach(function(type) {
+                        if (selectedCity[type][0]) {
+                            $('#type').append(new Option(selectedCity[type][2], selectedCity[type][1]));
+                        }
+                    });
+                }
+            });
+        });
+    });
 </script>
 <script>
     function checkParams() {

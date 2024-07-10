@@ -36,10 +36,11 @@ class MainController extends Controller
             $fileName = "https://super-kuper.ru/uploads/$name_image";
 
         }
-        $amo = new AmoController($first_name,$last_name,$phone,$dateb,$vacancy_id,$city_id,$city_name,$request_id,$fileName);
-        $response = $amo -> send();
         $sb = new SberController($first_name,$last_name,$phone,$dateb,$vacancy_id,$city_id,$request_id);
         $sbresp = $sb -> send();
+        $amo = new AmoController($first_name,$last_name,$phone,$dateb,$vacancy_id,$city_id,$city_name,$request_id,$sbresp,$fileName);
+        $response = $amo -> send();
+
         return $response;
 
        

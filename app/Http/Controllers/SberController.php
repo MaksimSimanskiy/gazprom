@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
+
 
 class SberController extends Controller
 {
@@ -60,7 +63,29 @@ $response = Http::withHeaders([
     ]
 ],$request->all());
      $responseData = $response->json();
-     return $responseData;
+     $uuid = $responseData['details']['uuid'];
+     $this->saveResponseData($responseData);
+     return $uuid;
     }
+    private function saveResponseData($responseData)
+    {
+        $filePath = 'responses.json'; // Путь к файлу JSON
+        $data = [];
 
+        // Проверка, существует ли файл
+        if (Storage::exists($filePath)) {
+            // Загрузка текущего содержимого файла
+            $json = Storage::get($filePath);
+            $data = json_decode($json, true);
+        }
+
+        // Добавление новых данных
+        $data[] = [
+            'responseData' => $responseData,
+            'timestamp' => Carbon::now()->toDateTimeString()
+        ];
+
+        // Сохранение данных обратно в файл
+        Storage::put($filePath, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    }
 }

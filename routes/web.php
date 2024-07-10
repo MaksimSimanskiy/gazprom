@@ -10,9 +10,9 @@ Route::get('/', function () {
 Route::get('/main', function () {
     return view('main');
 }) -> name('major');
-Route::get('/reg/{selectedType?}', function ($selectedType = null) {
-    return view('reg', ['selectedType' => $selectedType]);
-})->name('reg');
+Route::get('/reg', function () {
+    return view('reg');
+}) -> name('reg');
 Route::get('/admin', function () {
     return view('admin');
 }) -> name('');
