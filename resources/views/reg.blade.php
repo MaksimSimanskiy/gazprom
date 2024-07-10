@@ -125,10 +125,10 @@
 
 <script>
         const typeInput = document.getElementById('remember');
-        const dobInput = document.getElementById('dateb');
+        let dobInput = document.getElementById('dateb');
         const underageDiv = document.getElementById('sixteen');
         const verificationInput = document.getElementById('verification');
-        typeInput.addEventListener('click', function() {
+        dobInput.addEventListener('input', function() {
             const today = new Date();
             const birthDate = new Date(dobInput.value);
             let age = today.getFullYear() - birthDate.getFullYear();
