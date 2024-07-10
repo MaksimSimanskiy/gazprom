@@ -326,7 +326,7 @@
         <img class="h-14 w-14 rounded-t-lg" src="{{ url('svg/sber/pers.svg')}}" alt="" />
 </div>
     <div class="p-5">
-            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Без начальников</h5>
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Свободный график</h5>
 
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Сам себе босс, самостоятельно принимаете решения когда выходить на линию, сколько на ней быть онлайн, где осуществлять доставку</p>
 

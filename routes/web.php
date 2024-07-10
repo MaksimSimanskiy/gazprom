@@ -15,7 +15,7 @@ Route::get('/reg/{selectedType?}', function ($selectedType = null) {
 })->name('reg');
 Route::get('/admin', function () {
     return view('admin');
-}) -> name('admin');
+}) -> name('');
 Route::put('/admin', function () {
     return view('admin');
 }) -> name('admin');
