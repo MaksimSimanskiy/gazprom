@@ -62,10 +62,19 @@ $response = Http::withHeaders([
         ]
     ]
 ],$request->all());
-     $responseData = $response->json();
-     $uuid = $responseData['details'][0]['uuid'];
-     $this->saveResponseData($responseData);
-     return $uuid;
+$responseData = $response->json();
+$uuid = $this->extractUuid($responseData);
+$this->saveResponseData($responseData);
+
+return $uuid;
+    }
+    private function extractUuid($responseData)
+    {
+        // Проверяем, существует ли 'details' и содержит ли массив хотя бы один элемент
+        if (isset($responseData['details']) && is_array($responseData['details']) && count($responseData['details']) > 0) {
+            return $responseData['details'][0]['uuid'] ?? null;
+        }
+        return null;
     }
     private function saveResponseData($responseData)
     {
