@@ -14,10 +14,10 @@
     
 
   
-            <h2 class="mb-4 md:text-4xl text-2xl font-bold tracking-tight text-white mx-4">Станьте курьером</h2>
-            <p class="md:mb-8 mb-2 text-white md:text-3xl text-xl font-medium tracking-tight mx-4">Огромное количество заказов через приложение ждет вас!</p>
-            <p class="md:mb-8 mb-6 text-white  md:text-3xl text-xl font-medium  tracking-tight mx-4">Регистрируйтесь и присоединяетесь</p>
-            <a href="{{ route('reg') }}" class="shadow-md text-white font-bold my-6 mx-4 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg md:text-3xl text-xl px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Стать курьером!</a>
+            <h2 class="mb-4 md:text-5xl text-2xl font-bold tracking-tight text-white mx-4">Станьте курьером</h2>
+            <p class="md:mb-8 mb-2 text-white md:text-4xl text-xl font-medium tracking-tight mx-4">Огромное количество заказов через приложение ждет вас!</p>
+            <p class="md:mb-8 mb-6 text-white  md:text-4xl text-xl font-medium  tracking-tight mx-4">Регистрируйтесь и присоединяетесь</p>
+            <a href="{{ route('reg') }}" class="shadow-md text-white font-bold my-6 mx-4 hover:shadow-md bg-gazprom hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-green-300  rounded-lg md:text-4xl text-xl px-4 py-3 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Стать курьером!</a>
 
         
 
