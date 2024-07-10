@@ -15,11 +15,13 @@ Route::get('/reg', function () {
 }) -> name('reg');
 Route::get('/admin', function () {
     return view('admin');
-}) -> name('');
+})->middleware('auth')->name('admin');
+
 Route::put('/admin', function () {
     return view('admin');
-}) -> name('admin');
-Route::post('/admin', [AdminController::class, 'updateCity']) ->name('admin');
+})->middleware('auth')->name('admin');
+
+Route::post('/admin', [AdminController::class, 'updateCity'])->middleware('auth')->name('update');
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AdminController::class, 'login']);
 

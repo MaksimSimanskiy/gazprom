@@ -98,7 +98,7 @@
                     Вы успешно зарегистрировались. В скором времени мы с вами свяжемся и сообщим дальнейший порядок действий.
                 </p>
                 <p class="text-bold text-center leading-relaxed text-orange-500 dark:text-gray-400" id="response">
-                    <a class="text-orange-500" href="{{ url('docs/ИнструкцияСбермаркет.pdf') }}">Инструкция для работы</a>
+                    <a class="text-white bg-gazprom hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" href="{{ url('docs/ИнструкцияСбермаркет.pdf') }}">Инструкция для работы</a>
                 </p>
             </div>
             <!-- Modal footer -->
