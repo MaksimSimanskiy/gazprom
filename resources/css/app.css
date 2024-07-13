@@ -7,7 +7,7 @@
       font-family: 'CoFo Sans';
       font-style: normal;
       font-weight: 500;
-      src: url(/font/CoFoSans-Medium.woff2) format('woff2');
+      src: url(/resources/font/CoFoSans-Regular.woff2) format('woff2');
     }
   }
   input[type="date"]::-webkit-inner-spin-button,

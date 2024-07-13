@@ -1,11 +1,15 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CUNWMHht.css",
+    "file": "assets/app-C6_0yJic.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/font/CoFoSans-Regular.woff2": {
+    "file": "assets/CoFoSans-Regular-5fs8RDZZ.woff2",
+    "src": "resources/font/CoFoSans-Regular.woff2"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-BNbbAeVw.js",
+    "file": "assets/app-Bra6MsPr.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
