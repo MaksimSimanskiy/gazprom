@@ -31,7 +31,7 @@ class SberController extends Controller
         $this->phone = $newStr;
         $this->dateb = $dateb;
         $this->vacancy_id = $vacancy_id;
-        if($vacancy_id == 3_1){
+        if($vacancy_id == 31){
             $this->vacancy_id = 3;
         }
         $this->city_id = $city_id;

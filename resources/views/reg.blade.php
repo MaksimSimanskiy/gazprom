@@ -218,7 +218,6 @@ $(document).ready(function(){
 
                     // Clear the job type dropdown
                     typeSelectize.clearOptions();
-                    typeSelectize.addOption({value: '', text: 'Выберите тип работы'});
 
                     if (selectedCity) {
                         // Add job types to the dropdown if the first element is true
