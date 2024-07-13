@@ -16,16 +16,19 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <title>@yield('title')</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
     <link rel="shortcut icon" href="Kuper_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.default.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!--<script src="{{ url('js/scrips.js') }}"></script>-->
 
     @vite(['resources/css/app.css','resources/js/app.js'])
 
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
- 
+
     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b md:border-gray-100 dark:border-gray-600 shadow-md border border-gray-200 rounded-lg md:rounded-none" >
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <a href="#" class="flex items-center space-x-5 rtl:space-x-reverse">
@@ -88,6 +91,8 @@
       </div>
       
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+
 <footer class="bg-white rounded-lg shadow m-4 mt-8 dark:bg-gray-800">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">

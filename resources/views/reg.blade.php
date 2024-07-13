@@ -4,6 +4,7 @@
 <form method="post" name="myForm" enctype="multipart/form-data" class="flex justify-center items-center my-16 " action="" id="form">
     @csrf
     @method('POST')
+
     <div class="grid gap-5 m-4 mt-8 md:grid-cols-1 p-5  hover:shadow-gazprom hover:shadow-md rounded-lg gradient2">
     <div id="vacancy" class="inline-flex items-center justify-center w-full ">
     <hr class="md:w-full w-full h-0.5 md:h-1 my-8 fon-gradient border-0 dark:bg-gray-700">
@@ -34,17 +35,17 @@
     
     <label for="dateb" min="1910-01-01" max="2020-01-01" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Дата рождения</label>
 
-    <input type="date" name="dateb" id="dateb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="09.09.1999" />
+    <input type="date" name="dateb" id="dateb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="09.09.1999" required/>
 </div>
 <div>
-    <select id="city" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" required >
+    <select id="city" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" autocomplete="off" required >
       <option value="" selected disabled>Выберите город</option>
    
     </select>
   
   </div>
     <div>
-  <select  id="type" name="type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" required>
+  <select  id="type" name="type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" required>
     <option  value="" selected disabled>Выберите тип работы</option>
   </select>
     </div>
@@ -180,6 +181,7 @@ $(document).ready(function(){
     });
 });
 </script>
+
 <script>
     
     document.getElementById('city').addEventListener('change', function() {
@@ -188,34 +190,52 @@ $(document).ready(function(){
 });
     // Функция для загрузки и обработки данных из файла city.json
     $(document).ready(function() {
-        $.getJSON("{{ url('city.json') }}", function(citiesData) {
-            // Populate city dropdown
-            citiesData.cities.forEach(function(city) {
-                if (city.show) {
-                    $('#city').append(new Option(city.name, city.id));
-                }
+            // Initialize Selectize for city and type dropdowns
+            var $citySelect = $('#city').selectize({
+                placeholder: 'Выберите город'
+            });
+            var $typeSelect = $('#type').selectize({
+                placeholder: 'Выберите тип работы',
+                disabled: true
             });
 
-            // Event listener for city selection change
-            $('#city').change(function() {
-                var selectedCityId = $(this).val();
-                var selectedCity = citiesData.cities.find(city => city.id == selectedCityId);
+            var citySelectize = $citySelect[0].selectize;
+            var typeSelectize = $typeSelect[0].selectize;
 
-                // Clear the job type dropdown
-                $('#type').empty();
-                $('#type').append(new Option('Выберите тип работы', ''));
+            $.getJSON("{{ url('city.json') }}", function(citiesData) {
+                // Populate city dropdown
+                citiesData.cities.forEach(function(city) {
+                    if (city.show) {
+                        citySelectize.addOption({value: city.id, text: city.name});
+                    }
+                });
+                citySelectize.refreshOptions(false);
 
-                if (selectedCity) {
-                    // Add job types to the dropdown if the first element is true
-                    ['walk', 'plan', 'uni', 'velo'].forEach(function(type) {
-                        if (selectedCity[type][0]) {
-                            $('#type').append(new Option(selectedCity[type][2], selectedCity[type][1]));
-                        }
-                    });
-                }
+                // Event listener for city selection change
+                citySelectize.on('change', function(value) {
+                    var selectedCityId = value;
+                    var selectedCity = citiesData.cities.find(city => city.id == selectedCityId);
+
+                    // Clear the job type dropdown
+                    typeSelectize.clearOptions();
+                    typeSelectize.addOption({value: '', text: 'Выберите тип работы'});
+
+                    if (selectedCity) {
+                        // Add job types to the dropdown if the first element is true
+                        ['walk', 'plan', 'uni', 'velo'].forEach(function(type) {
+                            if (selectedCity[type][0]) {
+                                typeSelectize.addOption({value: selectedCity[type][1], text: selectedCity[type][2]});
+                            }
+                        });
+                        typeSelectize.enable();
+                    } else {
+                        typeSelectize.disable();
+                    }
+
+                    typeSelectize.refreshOptions(false);
+                });
             });
         });
-    });
 </script>
 <script>
     function checkParams() {
@@ -233,4 +253,5 @@ $(document).ready(function(){
     }
 }
 </script>
+
 @endsection

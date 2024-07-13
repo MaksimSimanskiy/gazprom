@@ -34,3 +34,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 100vh; /* Высота по вашему желанию */
 }
 
+
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
+  font-size: .875rem;
+  padding-bottom: 0;
+}
+  .selectize-input {
+    background-color: rgb(249 250 251 2);
+      border: none; /* Dark border */
+      color: rgb(17 24 39 / var(--tw-text-opacity));
+      font-size: .875rem;
+line-height: 1.25rem;
+  }
+
+  .selectize-dropdown-content {
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+  }
+
+  .selectize-input.focus {
+      border-color: #ed8936; /* Orange border on focus */
+  }
+  .selectize-input > div {
+      color: rgb(17 24 39 / var(--tw-text-opacity)); /* Light text for selected items */
+  }
+  .selectize-control.single .selectize-input {
+    
+      box-shadow: none;
+      background-image:none;
+      background-color: white;
+      font-size: .875rem;
+line-height: 1.25rem;
+font-weight: 500;
+color:black ;
+  }
