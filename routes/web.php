@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CallbackController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\AdminController;
@@ -24,6 +25,6 @@ Route::put('/admin', function () {
 Route::post('/admin', [AdminController::class, 'updateCity'])->middleware('auth')->name('update');
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AdminController::class, 'login']);
-
+Route::post('/callback', [CallbackController::class, 'submit'])->name('callback.submit');
 Route::post('/form', [MainController::class, 'add']) ->name('form');
 
