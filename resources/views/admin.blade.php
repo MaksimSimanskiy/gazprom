@@ -55,7 +55,7 @@
                 cityBox.append(cityCheckbox, cityName);
 
                 // Добавить чекбоксы для каждого типа работы
-                ['walk', 'plan', 'uni', 'velo'].forEach(type => {
+                ['walk', 'plan', 'uni', 'velo', 'sbor'].forEach(type => {
                     const job = city[type];
                     if (job) {
                         const jobBox = $('<div></div>').addClass('m-2 border-2 p-1 border-gray-300 rounded-lg');

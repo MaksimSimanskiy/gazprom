@@ -18,7 +18,7 @@ class SberController extends Controller
     public  int $vacancy_id;
     public  int $city_id;
     public  string $request_id;
-    private string $url = "https://crm-gw.sbermarket.ru/partner-candidate/v1/leads/import";
+    private string $url = "https://crm-gw.sbermarket.ru/partner-candidate/v2/leads/import";
     private string $login = "com_taxi_centr_krnd";
     private string $pass = "IYggiW1Jq**";
 

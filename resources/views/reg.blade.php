@@ -51,9 +51,33 @@
     </div>
 
   <input id="city_name" name="city_name" type="hidden" enctype="multipart/form-data">
-    
+    <div class="hidden" id="citizenship_div">
+    <label for="citizenship" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Есть ли у вас гражданство РФ?</label>
+    <select id="citizenship" name="citizenship" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
+        <option value="" selected disabled>Выберите вариант</option>
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+    </select>
+</div>
+
+<div class="hidden" id="patent_div">
+    <label for="patent" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Есть ли у вас патент/ВНЖ?</label>
+    <select id="patent" name="patent" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
+        <option value="" selected disabled>Выберите вариант</option>
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+    </select>
+</div>
+<div class="hidden" id="med_div">
+    <label for="med" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Есть ли у вас мед.книжка?</label>
+    <select id="med" name="med" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500">
+        <option value="" selected disabled>Выберите вариант</option>
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+    </select>
+</div>
     <div class="hidden" id="sixteen">
-<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Загрузите фото согласия от законных представителей <a download href="{{url('docs/ФормаСогласия.pdf')}}" class="text-orange-400 hover:underline dark:text-orange-500">Шаблон согласия</a>.</label>
+<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Загрузите фото согласия от законных представителей <a href="{{url('docs/ФормаСогласия.pdf')}}" target="_blank" class="text-orange-400 hover:underline dark:text-orange-500"  download>Шаблон согласия</a>.</label>
 <input id ="verification" name="file "class="block w-full  text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" type="file">
 <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">После проверки вы сможете начать работать</p>
 
@@ -84,7 +108,7 @@
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                    Спасибо за регистрацию!
+                    Регистрация
                 </h3>
                 <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -189,52 +213,57 @@ $(document).ready(function(){
   document.getElementById('city_name').value = selectedCity;
 });
     // Функция для загрузки и обработки данных из файла city.json
-    $(document).ready(function() {
-            // Initialize Selectize for city and type dropdowns
-            var $citySelect = $('#city').selectize({
-                placeholder: 'Выберите город'
-            });
-            var $typeSelect = $('#type').selectize({
-                placeholder: 'Выберите тип работы',
-                disabled: true
-            });
+   $(document).ready(function() {
+    // Initialize Selectize for city and type dropdowns
+    var $citySelect = $('#city').selectize({
+        placeholder: 'Выберите город'
+    });
+    var $typeSelect = $('#type').selectize({
+        placeholder: 'Выберите тип работы',
+        disabled: true
+    });
+    var $cityValue = $('#city_name'); // Элемент для вывода названия выбранного города
+    var citySelectize = $citySelect[0].selectize;
+    var typeSelectize = $typeSelect[0].selectize;
 
-            var citySelectize = $citySelect[0].selectize;
-            var typeSelectize = $typeSelect[0].selectize;
-
-            $.getJSON("{{ url('city.json') }}", function(citiesData) {
-                // Populate city dropdown
-                citiesData.cities.forEach(function(city) {
-                    if (city.show) {
-                        citySelectize.addOption({value: city.id, text: city.name});
-                    }
-                });
-                citySelectize.refreshOptions(false);
-
-                // Event listener for city selection change
-                citySelectize.on('change', function(value) {
-                    var selectedCityId = value;
-                    var selectedCity = citiesData.cities.find(city => city.id == selectedCityId);
-
-                    // Clear the job type dropdown
-                    typeSelectize.clearOptions();
-
-                    if (selectedCity) {
-                        // Add job types to the dropdown if the first element is true
-                        ['walk', 'plan', 'uni', 'velo'].forEach(function(type) {
-                            if (selectedCity[type][0]) {
-                                typeSelectize.addOption({value: selectedCity[type][1], text: selectedCity[type][2]});
-                            }
-                        });
-                        typeSelectize.enable();
-                    } else {
-                        typeSelectize.disable();
-                    }
-
-                    typeSelectize.refreshOptions(false);
-                });
-            });
+    $.getJSON("{{ url('city.json') }}", function(citiesData) {
+        // Populate city dropdown
+        citiesData.cities.forEach(function(city) {
+            if (city.show) {
+                citySelectize.addOption({value: city.id, text: city.name});
+            }
         });
+        citySelectize.refreshOptions(false);
+
+        // Event listener for city selection change
+        citySelectize.on('change', function(value) {
+            var selectedCityId = value;
+            var selectedCity = citiesData.cities.find(city => city.id == selectedCityId);
+
+            // Clear the job type dropdown
+            typeSelectize.clearOptions();
+
+            if (selectedCity) {
+                // Add job types to the dropdown if the first element is true
+                ['walk', 'plan', 'uni', ,'velo', 'sbor' ].forEach(function(type) {
+                    if (selectedCity[type][0]) {
+                        typeSelectize.addOption({value: selectedCity[type][1], text: selectedCity[type][2]});
+                    }
+                });
+                typeSelectize.enable();
+
+                // Set the city name in the $cityValue element
+                $cityValue.val(selectedCity.name);
+            } else {
+                typeSelectize.disable();
+                $cityValue.val(''); // Очистить значение, если город не выбран
+            }
+
+            typeSelectize.refreshOptions(false);
+        });
+    });
+});
+
 </script>
 <script>
     function checkParams() {
@@ -252,5 +281,37 @@ $(document).ready(function(){
     }
 }
 </script>
+<script>
+    // Получаем select для типа работы
+    $('#type').on('change', function() {
+        var selectedJobType = $(this).text();
+        // Если выбран "Сборщик", показываем поле для гражданства
+        if (selectedJobType === 'Сборщик') { // используйте правильное значение для "Сборщик"
+            $('#citizenship_div').removeClass('hidden');
+        } else {
+            $('#citizenship_div').addClass('hidden');
+            $('#patent_div').addClass('hidden');
+            $('#med_div').addClass('hidden');
+            $('#citizenship').val(''); // Очищаем select для гражданства
+            $('#patent').val(''); // Очищаем поле для патента/ВНЖ
+            $('#med').val('');
+        }
+    });
 
+    // Показываем поле для патента/ВНЖ, если выбрано "Нет" для гражданства РФ
+    $('#citizenship').on('change', function() {
+        var selectedCitizenship = $(this).val();
+
+        if (selectedCitizenship === 'Нет') {
+            $('#patent_div').removeClass('hidden');
+            $('#med_div').addClass('hidden');
+            $('#med').val('');
+        } 
+        else {
+            $('#patent_div').addClass('hidden');
+            $('#med_div').removeClass('hidden');
+            $('#patent').val('');
+        }
+    });
+</script>
 @endsection
